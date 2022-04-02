@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./public/assets/libs/Normalize.css">
+  <link rel="stylesheet" href="./public/assets/css/style.css">
+
+  <link rel="shortcut icon" href="./public/assets/img/Skycel.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
+    rel="stylesheet">
+
+  <title>Skycel - Développeur fullstack</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="./public/assets/img/Skycel.png" alt="Logo skycel" class="logo-img">
+          <h3 class="logo-text">
+            <span>S</span>kycel<span>.</span>
+          </h3>
+        </div>
+        <ul class="links" id="nav-links">
+          <li class="item">
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Home"></use>
+              </svg>
+              <p>Home</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Work"></use>
+              </svg>
+              <p>Projets</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Book"></use>
+              </svg>
+              <p>Compétences</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Doc-PJ"></use>
+              </svg>
+              <p>CV</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Spider-web"></use>
+              </svg>
+              <p>Aranéite</p>
+            </a>
+          </li>
+          <li class="item button">
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Mail"></use>
+              </svg>
+              <p>Contact</p>
+            </a>
+          </li>
+        </ul>
+        <div class="right-container">
+          <a href="#" class="toggle-btn" id="nav-toggle">
+            <div class="bar bar-1"></div>
+            <div class="bar bar-2"></div>
+            <div class="bar bar-3"></div>
+          </a>
+          <a href="#" class="button">
+            <svg class="icon">
+              <use xlink:href="./public/assets/img/Sprite-icons.svg#Mail"></use>
+            </svg>
+            <p>Contact</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <header class="banner">
+      <div class="left">
+        <h2 class="title"><span>>_</span> Hello <span class="nobr">world!<span class="cursor"></span></span></h2>
+        <h1 class="title">Je suis Célian BURST,
+          <br>Développeur web <span class="nobr">fullstack
+            <sup id="fullstack">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Info"></use>
+              </svg>
+            </sup></span>
+        </h1>
+        <div class="def-modal" id="fullstack-modal">
+          <h4 class="title">Fullstack</h4>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tate totam sint fugit est officia hic excepturi dolor explicabo maiores, blanditiis amet, debitis earum itaque, ipsum suscipit illum alias saepe?</p>
+        </div>
+        <div class="cta-container">
+          <a href="#" class="button primary">
+            <svg class="icon">
+              <use xlink:href="./public/assets/img/sprite-icons.svg#Mail"></use>
+            </svg>
+            <p>Contact</p>
+          </a>
+          <a href="#" class="button secondary">
+            <p>Voir mes projets</p>
+          </a>
+        </div>
+        <p class="text">En avant pour la visite ! <span>&rarr;</span></p>
+      </div>
+      <div class="right">
+        <img src="public/assets/img/Character.svg"
+             alt="Illustration d'un personnage assis à un bureau utilisant un ordinateur">
+      </div>
+    </header>
+    <section class="about">
+      <div class="left">
+        <img src="./public/assets/img/Building-website.svg" alt="Illustartion de personnages créant un site web">
+      </div>
+      <div class="right">
+        <div class="container">
+          <h3 class="title">À propos de moi</h3>
+          <p class="text">
+            Lycéen en classe de terminale, passionné d’informatique je suis à même de construire en maintenir un projet web. Le
+            développement n’étant cependant qu’un des nombreux domaines aux quels je porte une attention particulière...
+          </p>
+        </div>
+        <div class="container">
+          <h3 class="title">Mes centres d'intérêts</h3>
+          <div id="carousel1">
+            <div class="item main">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Laptop"></use>
+              </svg>
+              <p class="label">Frontend</p>
+            </div>
+            <div class="item second">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Server"></use>
+              </svg>
+              <p class="label">Backend</p>
+            </div>
+            <div class="item third">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Database"></use>
+              </svg>
+              <p class="label">Base de données</p>
+            </div>
+            <div class="item main">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#World-meridians"></use>
+              </svg>
+              <p class="label">HTTP</p>
+            </div>
+            <div class="item second">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Paint-brush"></use>
+              </svg>
+              <p class="label">UX/UI Design</p>
+            </div>
+            <div class="item third">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Video"></use>
+              </svg>
+              <p class="label">Audiovisuel</p>
+            </div>
+            <div class="item main">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Fire"></use>
+              </svg>
+              <p class="label">Sapeur-pompier</p>
+            </div>
+            <div class="item second">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Basket-sport"></use>
+              </svg>
+              <p class="label">Sport</p>
+            </div>
+            <div class="item third">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Communication-bubble"></use>
+              </svg>
+              <p class="label">Communication</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./public/assets/js/Nav.js" defer></script>
+  <script src="./public/assets/js/Banner.js" defer></script>
+  <script src="./public/assets/js/Carousel.js" defer></script>
+
+</body>
+
+</html>
