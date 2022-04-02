@@ -1,0 +1,71 @@
+.carousel {
+	position: relative;
+	overflow: hidden;
+}
+.carouselContainer {
+	transition: transform 0.5s ease-in-out;
+}
+.carouselContainer::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.carouselItem {
+	float: left;
+}
+.carouselBtn {
+	position: absolute;
+	z-index: 99;
+	cursor: pointer;
+	background: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	transform: translateY(-50%);
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	top: 50%;
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.carouselBtnPrev {
+	left: 5;
+	background-image: url(https://cdn4.iconfinder.com/data/icons/navigation-40/24/chevron-left-512.png);
+}
+.carouselBtnNext {
+	right: 5;
+	background-image: url(https://cdn4.iconfinder.com/data/icons/navigation-40/24/chevron-right-512.png);
+}
+.carouselBtn:hover {
+	transform: translateY(-50%) scale(1.2);
+}
+.carouselBtnHidden {
+	opacity: 0!important;
+}
+.carouselPagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 5rem;
+}
+.carouselPaginationButton {
+	width: 7px;
+	height: 7px;
+	background: #fff;
+	border-radius: 50%;
+	margin: 0 7px;
+	cursor: pointer;
+	transition: transform 0.5s ease-in-out;
+}
+.carouselPaginationButtonActive, .carouselPaginationButton:hover {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 800px) {
+	.carouselBtn {
+		width: 20px;
+		height: 20px;
+		background-size: 20px 20px;
+	}
+}
