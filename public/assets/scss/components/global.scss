@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  width: 100%;
+  background: map-get($colors, bg);
+}
+
+a {
+  text-decoration: none;
+  border-radius: 20px;
+
+  &:-moz-focusring {
+    outline: solid map-get($colors, second);
+    color: inherit;
+  }
+}
+
+span.nobr {
+  white-space: nowrap;
+}
+
+main {
+  padding: 350px 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //xtransition: padding 0.5s ease-in-out;
+
+  @include media(2000) {
+    padding: 250px 15%;
+  }
+  @include media(1800) {
+    padding: 175px 15%;
+  }
+  @include media(1100) {
+    padding: 100px 0;
+  }
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 13px;
+    transition: width 0.5s ease-in-out;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: lighten($color: map-get($colors, nav-bg), $amount: 5);
+    border-radius: 20px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparentize(map-get($colors, text), 0.7);
+    border-radius: 20px;
+    border: 3px solid lighten($color: map-get($colors, nav-bg), $amount: 5);
+  }
+}
