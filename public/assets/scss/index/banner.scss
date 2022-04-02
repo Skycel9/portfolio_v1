@@ -1,0 +1,329 @@
+header.banner {
+  color: map-get($colors, text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  user-select: auto;
+  transition: all .5s ease-in-out;
+
+  .left,
+  .right {
+    margin: 30px;
+  }
+
+  .right {
+    position: relative;
+  }
+
+  .title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 40px 0;
+    line-height: 1.3;
+    transition: all 0.5s ease;
+
+    span {
+      color: map-get($colors, main);
+    }
+
+    span.nobr {
+      color: map-get($colors, text);
+    }
+
+    sup .icon {
+      width: 3rem;
+      height: 3rem;
+      transition: all 0.5s ease;
+    }
+
+    .cursor {
+      height: 4rem;
+      width: 4px;
+      background: map-get($colors, text);
+      display: inline-block;
+      margin-left: 10px;
+      animation: linear cursor-blink 1.2s infinite;
+    }
+  }
+
+  .def-modal {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    max-width: 200px;
+    min-width: 150px;
+    padding: 15px;
+    background: lighten(map-get($colors, nav-bg), 10);
+    color: map-get($colors, text);
+    border-radius: 10px;
+    z-index: 950;
+
+    &.active {
+      display: block;
+      transform: translate(10px, 10px);
+    }
+
+    .title {
+      margin: 15px 30px;
+    }
+
+    .paragraph {
+      font-size: 1.5rem;
+    }
+  }
+
+  .cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 75px 0;
+    transition: all 0.5s ease;
+    flex-wrap: wrap;
+
+    .button {
+      font-size: 3rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: map-get($colors, bg);
+      padding: 1.5rem 3rem;
+      border-radius: 50px;
+      border: 5px solid map-get($colors, main);
+      transition-delay: 0s;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 5px 5px transparentize(map-get($colors, main), 0.8);
+      }
+
+    }
+
+    .button .icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      margin: 0 20px 0 0;
+      transition: all 0.5s ease;
+    }
+
+    .button.primary {
+      background: map-get($colors, main);
+      margin-right: 30px;
+    }
+
+    .button.secondary {
+      color: map-get($colors, text);
+    }
+  }
+
+  .text {
+    color: map-get($colors, text-60);
+    font-size: 3rem;
+    margin: 40px 0;
+    width: fit-content;
+    transition: all 0.5s ease;
+
+    span {
+      margin: 0;
+      transition: margin 0.5s ease;
+    }
+
+    &:hover span {
+      margin-left: 20px;
+    }
+  }
+
+  .right img {
+    position: relative;
+    width: 15vw;
+    max-width: 650px;
+    min-width: 230px;
+    transition: all 0.5s ease;
+  }
+
+  .right::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: transparentize(map-get($colors, second), .9);
+    filter: blur(150px);
+    transition: all .3s ease;
+  }
+
+  .right:hover::before {
+    background: transparentize(map-get($colors, second), .8);
+  }
+
+  // Media queries
+  @include media(2300) {
+    .title {
+      font-size: 3.2rem;
+      margin: 40px 0;
+    }
+    .title sup .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    .title .cursor {
+      height: 2.5rem;
+      width: 2px;
+      margin-left: 5px;
+    }
+
+    .cta-container {
+      margin: 60px 0;
+
+      .button {
+        font-size: 2.2rem;
+        padding: 1rem 2rem;
+        border-width: 3px;
+      }
+
+      .button .icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 0 10px 0 0;
+      }
+    }
+
+    .text {
+      font-size: 2rem;
+      margin: 30px 0;
+    }
+
+    .right img {
+      max-height: 560px;
+    }
+  }
+  @include media(1800) {
+    .title {
+      font-size: 2.8rem;
+      margin: 30px 0;
+    }
+    .title sup .icon {
+      margin: 0;
+      width: 2rem;
+      height: 2rem;
+    }
+    .title .cursor {
+      height: 2.5rem;
+    }
+
+    .cta-container {
+      margin: 40px 0;
+
+      .button {
+        font-size: 2rem;
+        padding: 0.8rem 1.6rem;
+        border: 3px solid map-get($colors, main);
+      }
+
+      .button .icon {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0 10px 0 0;
+      }
+    }
+
+    .text {
+      font-size: 1.8rem;
+      margin: 20px 0;
+    }
+  }
+  @include media(1500) {
+    .title {
+      font-size: 2.5rem;
+      margin: 20px 0;
+    }
+    .title sup .icon {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+    .title .cursor {
+      height: 2.5rem;
+      width: 2px;
+    }
+
+    .cta-container {
+      margin: 20px 0;
+
+      .button {
+        font-size: 1.5rem;
+        border-width: 1px;
+      }
+
+      .button .icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0 5px 0 0;
+      }
+    }
+
+    .text {
+      font-size: 1.5rem;
+    }
+  }
+  @include media(1100) {
+    justify-content: space-around;
+
+    .cta-container {
+      margin: 20px 0;
+    }
+    .cta-container .button {
+      font-size: 1.4rem;
+      padding: 0.7rem 1.4rem;
+
+      &.primary {
+        margin-right: 15px;
+      }
+    }
+    .cta-container .button .icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  @include media(500) {
+    .title {
+      font-size: 2rem;
+    }
+    .title sup .icon {
+      margin-left: -5px;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .title .cursor {
+      height: 1.8rem;
+    }
+    .cta-container .button {
+      margin: 5px 0;
+    }
+  }
+}
+
+//Cursor keyframes
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
