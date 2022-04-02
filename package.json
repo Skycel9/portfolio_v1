@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-v0.1_scss",
+  "version": "0.1.0",
+  "description": "Skycel's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass ./public/assets/scss/ -o ./public/assets/css",
+    "watch": "node-sass ./public/assets/scss -o ./public/assets/css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skycel9/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "development",
+    "Skycel9"
+  ],
+  "author": "Skycel9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skycel9/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Skycel9/Portfolio",
+  "dependencies": {}
+}
