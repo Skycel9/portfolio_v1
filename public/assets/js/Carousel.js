@@ -1,15 +1,3 @@
-/**
- * TODO Add - Infinite scroll
- * TODO Add - Centered active item in carousel
- * TODO Add - Vertical scroll
- * Todo Add - Drag and drop scroll
- * Todo Add - Mouse scroll
- *
- * //TODO Edit - Personalize style
- *
- * //Error - Miss 1 element on render
- */
-
 class Carousel {
   /**
    * @param {HTMLElement} element
