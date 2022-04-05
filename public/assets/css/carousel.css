@@ -29,15 +29,15 @@
 	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .carouselBtnPrev {
-	left: 5;
+	left: 5px;
 	background-image: url(https://cdn4.iconfinder.com/data/icons/navigation-40/24/chevron-left-512.png);
 }
 .carouselBtnNext {
-	right: 5;
+	right: 5px;
 	background-image: url(https://cdn4.iconfinder.com/data/icons/navigation-40/24/chevron-right-512.png);
 }
 .carouselBtn:hover {
-	transform: translateY(-50%) scale(1.2);
+	transform: translateY(-50%) scale(1.1);
 }
 .carouselBtnHidden {
 	opacity: 0!important;
