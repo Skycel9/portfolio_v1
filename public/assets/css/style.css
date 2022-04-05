@@ -37,7 +37,7 @@ main {
   @media screen and (max-width: 1800px) {
     main {
       padding: 175px 15%; } }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1200px) {
     main {
       padding: 100px 0; } }
 
@@ -692,12 +692,12 @@ section.about {
       font-size: 2rem; } }
   @media screen and (max-width: 2000px) {
     section.about .right {
-      max-width: 450px; } }
+      max-width: 550px; } }
   @media screen and (max-width: 1800px) {
     section.about {
       justify-content: space-around; }
       section.about .left img {
-        min-width: 350px; }
+        min-width: 300px; }
       section.about .right .container .title {
         font-size: 2.8rem; }
       section.about .right .container .text {
@@ -708,19 +708,27 @@ section.about {
       section.about .right .item .label {
         font-size: 1.5rem; } }
   @media screen and (max-width: 1500px) {
-    section.about .right .container .title {
-      font-size: 2rem;
-      margin: 1.3rem 0; }
-    section.about .right #carousel1 {
-      margin: 1rem 0; }
-    section.about .right .container .text {
-      font-size: 1.5rem; } }
+    section.about .right {
+      max-width: 450px;
+      margin: 0; }
+      section.about .right .container .title {
+        font-size: 2rem;
+        margin: 1.3rem 0; }
+      section.about .right #carousel1 {
+        margin: 1rem 0; }
+      section.about .right .container .text {
+        font-size: 1.5rem; } }
+  @media screen and (max-width: 1100px) {
+    section.about .right {
+      margin: 3rem; } }
   @media screen and (max-width: 800px) {
     section.about .left {
       margin: 3rem; }
     section.about .left img {
       width: 40vw;
-      min-width: 230px; } }
+      min-width: 230px; }
+    section.about .right {
+      max-width: 400px; } }
 
 /*
 Contact

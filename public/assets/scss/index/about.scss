@@ -145,14 +145,14 @@ section.about {
   }
   @include media(2000) {
     .right {
-      max-width: 450px;
+      max-width: 550px;
     }
   }
   @include media(1800) {
     justify-content: space-around;
 
     .left img {
-      min-width: 350px;
+      min-width: 300px;
     }
     .right {
       .container .title {
@@ -175,7 +175,8 @@ section.about {
   }
   @include media(1500) {
     .right {
-      max-width: 400px;
+      max-width: 450px;
+      margin: 0;
 
       .container .title {
         font-size: 2rem;
@@ -192,6 +193,11 @@ section.about {
 
     }
   }
+  @include media (1100) {
+    .right {
+      margin: 3rem;
+    }
+  }
   @include media(800) {
     .left {
       margin: 3rem;
@@ -203,7 +209,7 @@ section.about {
     }
 
     .right {
-      max-width: 350px;
+      max-width: 400px;
     }
   }
 }
