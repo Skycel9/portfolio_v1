@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "compile": "node-sass ./public/assets/scss/ -o ./public/assets/css",
-    "watch": "node-sass ./public/assets/scss -o ./public/assets/css -w"
+    "watch": "node-sass ./public/assets/scss -o ./public/assets/css -w",
+    "build": "node-sass ./public/assets/css/style.css ./public/assets/css/style.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",
