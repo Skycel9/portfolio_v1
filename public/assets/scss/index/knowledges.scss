@@ -1,0 +1,144 @@
+section.knowledges {
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .container .title {
+    font-size: 3.5rem;
+    color: map-get($colors, text);
+    margin: 4rem 5rem;
+  }
+  .container .text {
+    color: map-get($colors, text);
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 300;
+    max-width: 100rem;
+  }
+  .table {
+    position: relative;
+    border-radius: 2rem;
+    border: 4px solid #CFCCFF;
+    overflow: hidden;
+    margin-top: 10rem;
+    transition: all 0.3s ease-in-out;
+    min-width: fit-content;
+
+    .table-header {
+      width: 100%;
+      height: 7rem;
+      background: #CFCCFF;
+    }
+    .table-header .tabs {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #B4B0FE;
+        height: 100%;
+        width: 50%;
+        z-index: 90;
+        transition: transform .5s ease-in-out;
+      }
+      &.tools:before {
+        transform: translateX(100%);
+      }
+    }
+    .table-header .tabs .tab {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+
+      .label {
+        font-size: 2.7rem;
+        font-weight: bold;
+      }
+    }
+
+    .table-body {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem 0 3rem 0;
+    }
+    .table-view {
+      width: 100%;
+    }
+    .table-view .table-row {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 3rem 3rem 3rem;
+    }
+    .table-view .table-row .table-cell {
+      width: calc(100% / 3);
+
+      &:nth-child(1) {
+        justify-content: flex-start;
+      }
+      &:nth-child(2) {
+        justify-content: center;
+      }
+      &:nth-child(3) {
+        justify-content: flex-end;
+      }
+    }
+    .table-view .table-row .table-cell .table-cell-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      .icon {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 2rem;
+        color: map-get($colors, text);
+      }
+      .label {
+        font-size: 2.5rem;
+        font-weight: medium;
+        color: map-get($colors, text);
+      }
+    }
+    .table-view .table-row .table-cell .table-cell-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .table-view .table-row .table-cell .table-cell-body .tags {
+      font-size: 2rem;
+      margin-top: 2rem;
+      max-width: 65%;
+      color: darken(map-get($colors, text), 40%);
+    }
+  }
+
+  .left, .right {
+    margin: 7rem;
+  }
+  .right img {
+    max-width: 800px;
+  }
+}
+
+// Todo Responsive design
+
+.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
