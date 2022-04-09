@@ -23,5 +23,11 @@
     "url": "https://github.com/Skycel9/Portfolio/issues"
   },
   "homepage": "https://github.com/Skycel9/Portfolio",
-  "dependencies": {}
+  "dependencies": {},
+  "prettier": {
+    "ignore": [
+      "**/*.min.js",
+      "**/*.min.css"
+    ]
+  }
 }
