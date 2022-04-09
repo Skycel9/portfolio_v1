@@ -26,7 +26,7 @@ span.nobr {
   white-space: nowrap; }
 
 main {
-  padding: 350px 15%;
+  padding: 350px 12%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -729,6 +729,115 @@ section.about {
       min-width: 230px; }
     section.about .right {
       max-width: 400px; } }
+
+section.knowledges {
+  width: 100%; }
+  section.knowledges .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+  section.knowledges .container .title {
+    font-size: 3.5rem;
+    color: #DDDDDD;
+    margin: 4rem 5rem; }
+  section.knowledges .container .text {
+    color: #DDDDDD;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 300;
+    max-width: 100rem; }
+  section.knowledges .table {
+    position: relative;
+    border-radius: 2rem;
+    border: 4px solid #CFCCFF;
+    overflow: hidden;
+    margin-top: 10rem;
+    transition: all 0.3s ease-in-out;
+    min-width: fit-content; }
+    section.knowledges .table .table-header {
+      width: 100%;
+      height: 7rem;
+      background: #CFCCFF; }
+    section.knowledges .table .table-header .tabs {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%; }
+      section.knowledges .table .table-header .tabs:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #B4B0FE;
+        height: 100%;
+        width: 50%;
+        z-index: 90;
+        transition: transform .5s ease-in-out; }
+      section.knowledges .table .table-header .tabs.tools:before {
+        transform: translateX(100%); }
+    section.knowledges .table .table-header .tabs .tab {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100; }
+      section.knowledges .table .table-header .tabs .tab .label {
+        font-size: 2.7rem;
+        font-weight: bold; }
+    section.knowledges .table .table-body {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem 0 3rem 0; }
+    section.knowledges .table .table-view {
+      width: 100%; }
+    section.knowledges .table .table-view .table-row {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 3rem 3rem 3rem; }
+    section.knowledges .table .table-view .table-row .table-cell {
+      width: calc(100% / 3); }
+      section.knowledges .table .table-view .table-row .table-cell:nth-child(1) {
+        justify-content: flex-start; }
+      section.knowledges .table .table-view .table-row .table-cell:nth-child(2) {
+        justify-content: center; }
+      section.knowledges .table .table-view .table-row .table-cell:nth-child(3) {
+        justify-content: flex-end; }
+    section.knowledges .table .table-view .table-row .table-cell .table-cell-head {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      section.knowledges .table .table-view .table-row .table-cell .table-cell-head .icon {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 2rem;
+        color: #DDDDDD; }
+      section.knowledges .table .table-view .table-row .table-cell .table-cell-head .label {
+        font-size: 2.5rem;
+        font-weight: medium;
+        color: #DDDDDD; }
+    section.knowledges .table .table-view .table-row .table-cell .table-cell-body {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    section.knowledges .table .table-view .table-row .table-cell .table-cell-body .tags {
+      font-size: 2rem;
+      margin-top: 2rem;
+      max-width: 65%;
+      color: #777777; }
+  section.knowledges .left, section.knowledges .right {
+    margin: 7rem; }
+  section.knowledges .right img {
+    max-width: 800px; }
+
+.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; }
 
 /*
 Contact
