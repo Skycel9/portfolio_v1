@@ -910,9 +910,14 @@ section.knowledges {
     section.knowledges .container {
       flex-wrap: wrap; }
     section.knowledges .table {
-      min-width: 40rem; }
+      min-width: 40rem;
+      transform: skewY(0); }
+    section.knowledges .table-header .tab .label {
+      font-size: 2rem; }
     section.knowledges .right {
-      margin: auto; } }
+      margin: auto; }
+    section.knowledges .right img {
+      min-width: 40rem; } }
   @media screen and (max-width: 700px) {
     section.knowledges .left {
       margin: 5rem; }
@@ -936,16 +941,16 @@ section.knowledges {
     section.knowledges .cell .cell-body {
       font-size: 1rem; }
     section.knowledges .right {
-      margin: 2rem auto; }
+      margin: 5rem auto; }
     section.knowledges .right img {
-      width: 50vw;
+      width: 60vw;
       min-width: 20rem; } }
   @media screen and (max-width: 550px) {
     section.knowledges .container .text {
       margin: 0 3rem; } }
   @media screen and (max-width: 450px) {
     section.knowledges .left {
-      margin: 1rem; }
+      margin: 3rem; }
     section.knowledges .table {
       margin-bottom: 0;
       min-width: 15rem; }
@@ -956,6 +961,11 @@ section.knowledges {
       gap: 20px 0; }
     section.knowledges .cell-header {
       max-width: 50%; } }
+  @media screen and (max-width: 300px) {
+    section.knowledges .left {
+      margin: 1.5rem; }
+    section.knowledges .table-header .tab .label {
+      padding: 0 2rem; } }
 
 .hidden {
   position: absolute;
