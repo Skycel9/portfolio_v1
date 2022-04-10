@@ -246,9 +246,16 @@ section.knowledges {
     }
     .table {
       min-width: 40rem;
+      transform: skewY(0);
+    }
+    .table-header .tab .label {
+      font-size: 2rem;
     }
     .right {
       margin: auto;
+    }
+    .right img {
+      min-width: 40rem;
     }
   }
   @include media(700) {
@@ -286,10 +293,10 @@ section.knowledges {
     }
 
     .right {
-      margin: 2rem auto;
+      margin: 5rem auto;
     }
     .right img {
-      width: 50vw;
+      width: 60vw;
       min-width: 20rem;
     }
   }
@@ -300,7 +307,7 @@ section.knowledges {
   }
   @include media(450) {
     .left {
-      margin: 1rem;
+      margin: 3rem;
     }
     .table {
       margin-bottom: 0;
@@ -315,6 +322,14 @@ section.knowledges {
     }
     .cell-header {
       max-width: 50%;
+    }
+  }
+  @include media(300) {
+    .left {
+      margin: 1.5rem;
+    }
+    .table-header .tab .label {
+      padding: 0 2rem;
     }
   }
 }
