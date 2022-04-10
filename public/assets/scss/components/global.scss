@@ -6,7 +6,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -34,7 +34,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //xtransition: padding 0.5s ease-in-out;
 
   @include media(2000) {
     padding: 250px 15%;
