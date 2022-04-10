@@ -7,12 +7,14 @@ section.knowledges {
     align-items: center;
     width: 100%;
   }
+
   .container .title {
     font-size: 3.5rem;
     font-weight: 600;
     color: map-get($colors, text);
     margin: 4rem 5rem;
   }
+
   .container .text {
     color: map-get($colors, text);
     font-size: 2.5rem;
@@ -25,6 +27,7 @@ section.knowledges {
   .right {
     margin: 5rem;
   }
+
   .right img {
     width: 30vw;
   }
@@ -43,10 +46,12 @@ section.knowledges {
     &:hover {
       transform: skewY(0deg) scale(1.02);
     }
+
     &.toggled .table-header::before {
       left: 50%;
     }
   }
+
   .table-header {
     display: flex;
     align-items: center;
@@ -81,12 +86,14 @@ section.knowledges {
       }
     }
   }
+
   .table-body {
     width: 100%;
     height: 100%;
     display: flex;
     position: relative;
   }
+
   .table-view {
     position: relative;
     top: 0;
@@ -101,6 +108,7 @@ section.knowledges {
     transform-origin: right;
     transition: left 0.5s ease-in-out;
   }
+
   .table-view.hidden {
     position: absolute;
     left: 100%;
@@ -109,6 +117,7 @@ section.knowledges {
       left: -100%;
     }
   }
+
   .cell {
     display: flex;
     flex-direction: column;
@@ -126,11 +135,13 @@ section.knowledges {
         margin-right: 2rem;
         color: map-get($colors, text);
       }
+
       .label {
         font-size: 3rem;
         color: map-get($colors, text);
       }
     }
+
     .cell-body {
       font-size: 2.1rem;
       margin-top: 1rem;
@@ -174,6 +185,7 @@ section.knowledges {
         width: 4.5rem;
         height: 4.5rem;
       }
+
       .label {
         font-size: 2.5rem;
       }
@@ -209,6 +221,7 @@ section.knowledges {
         height: 3.5rem;
         margin-right: 1rem;
       }
+
       .label {
         font-size: 1.9rem;
       }
@@ -244,12 +257,18 @@ section.knowledges {
     .container {
       flex-wrap: wrap;
     }
+    .container .title {
+      font-size: 2rem;
+    }
+    .container .text {
+      font-size: 1.4rem;
+    }
     .table {
       min-width: 40rem;
       transform: skewY(0);
     }
     .table-header .tab .label {
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
     .right {
       margin: auto;
@@ -276,14 +295,12 @@ section.knowledges {
     .table-header {
       height: 4rem;
     }
-    .table-header .tab .label {
-      font-size: 1.7rem;
-    }
     .cell .cell-header {
       .icon {
         width: 2.5rem;
         height: 2.5rem;
       }
+
       .label {
         font-size: 1.5rem;
       }
