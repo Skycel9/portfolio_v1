@@ -348,7 +348,8 @@ nav.navbar {
       visibility: visible;
       opacity: 1; }
       nav.navbar .links .item.button a {
-        color: #111111; }
+        color: #111111;
+        padding: 0; }
     nav.navbar .button {
       display: none;
       visibility: hidden;
@@ -909,11 +910,15 @@ section.knowledges {
   @media screen and (max-width: 1000px) {
     section.knowledges .container {
       flex-wrap: wrap; }
+    section.knowledges .container .title {
+      font-size: 2rem; }
+    section.knowledges .container .text {
+      font-size: 1.4rem; }
     section.knowledges .table {
       min-width: 40rem;
       transform: skewY(0); }
     section.knowledges .table-header .tab .label {
-      font-size: 2rem; }
+      font-size: 1.7rem; }
     section.knowledges .right {
       margin: auto; }
     section.knowledges .right img {
@@ -931,8 +936,6 @@ section.knowledges {
       border-width: 2px; }
     section.knowledges .table-header {
       height: 4rem; }
-    section.knowledges .table-header .tab .label {
-      font-size: 1.7rem; }
     section.knowledges .cell .cell-header .icon {
       width: 2.5rem;
       height: 2.5rem; }
