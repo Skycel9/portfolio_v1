@@ -980,3 +980,30 @@ section.knowledges {
 Contact
 ----------------------
 */
+/*
+ Footer
+----------------------
+ */
+footer.footer {
+  width: 100%;
+  background: #151515; }
+  footer.footer .container {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer.footer .container .copyright {
+      font-size: 1.8rem;
+      color: #DDDDDD; }
+    footer.footer .container .links {
+      width: 20%;
+      display: flex;
+      justify-content: space-around;
+      list-style: none; }
+      footer.footer .container .links .link .icon {
+        color: #A0A0A0;
+        width: 3rem;
+        height: 3rem;
+        transition: color 0.3s ease-in-out; }
+        footer.footer .container .links .link .icon:hover {
+          color: #FA784F; }
