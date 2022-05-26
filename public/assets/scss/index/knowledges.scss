@@ -154,8 +154,15 @@ section.knowledges {
   }
 
   @include media(2300) {
+    .container .title {
+      font-size: 3rem;
+    }
+    .container .text {
+      font-size: 2rem;
+    }
+
     .table-header .tab .label {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
     .table-view {
       margin: 3rem;
@@ -166,6 +173,12 @@ section.knowledges {
         height: 5.5rem;
         margin-right: 1.5rem;
       }
+      .label {
+        font-size: 2.5rem;
+      }
+    }
+    .cell .cell-body .tags {
+      font-size: 1.9rem;
     }
   }
   @include media(2000) {
@@ -190,7 +203,7 @@ section.knowledges {
         font-size: 2.5rem;
       }
     }
-    .cell .cell-body {
+    .cell .cell-body .tags {
       font-size: 1.5rem;
     }
   }
@@ -226,7 +239,7 @@ section.knowledges {
         font-size: 1.9rem;
       }
     }
-    .cell-body {
+    .cell .cell-body .tags {
       font-size: 1rem;
     }
     .right img {
@@ -237,7 +250,7 @@ section.knowledges {
       margin: 3rem;
     }
   }
-  @include media(1600) {
+  @include media(1700) {
     .table {
       max-width: 60rem;
       margin: 7rem auto;
@@ -245,6 +258,14 @@ section.knowledges {
     }
     .right img {
       min-width: 30rem;
+    }
+  }
+  @include media(1500) {
+    .container .title {
+      font-size: 2rem;
+    }
+    .container .text {
+      font-size: 1.5rem;
     }
   }
   @include media(1200) {
@@ -280,14 +301,19 @@ section.knowledges {
   }
   @include media(700) {
     .left {
-      margin: 5rem;
+      margin: auto;
+    }
+    .container {
+      max-width: 40rem;
+      margin: auto;
     }
     .container .title {
       font-size: 2rem;
+      text-align: center;
     }
     .container .text {
       font-size: 1.5rem;
-      margin: 0 8rem;
+      max-width: 100%;
     }
     .table {
       min-width: 25rem;

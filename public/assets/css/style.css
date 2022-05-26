@@ -844,14 +844,22 @@ section.knowledges {
       align-items: center;
       color: #777777; }
   @media screen and (max-width: 2300px) {
+    section.knowledges .container .title {
+      font-size: 3rem; }
+    section.knowledges .container .text {
+      font-size: 2rem; }
     section.knowledges .table-header .tab .label {
-      font-size: 2.5rem; }
+      font-size: 2.8rem; }
     section.knowledges .table-view {
       margin: 3rem; }
     section.knowledges .cell .cell-header .icon {
       width: 5.5rem;
       height: 5.5rem;
-      margin-right: 1.5rem; } }
+      margin-right: 1.5rem; }
+    section.knowledges .cell .cell-header .label {
+      font-size: 2.5rem; }
+    section.knowledges .cell .cell-body .tags {
+      font-size: 1.9rem; } }
   @media screen and (max-width: 2000px) {
     section.knowledges .table {
       min-width: 65rem; }
@@ -865,7 +873,7 @@ section.knowledges {
       height: 4.5rem; }
     section.knowledges .cell .cell-header .label {
       font-size: 2.5rem; }
-    section.knowledges .cell .cell-body {
+    section.knowledges .cell .cell-body .tags {
       font-size: 1.5rem; } }
   @media screen and (max-width: 1800px) {
     section.knowledges .container .title {
@@ -889,20 +897,25 @@ section.knowledges {
         margin-right: 1rem; }
       section.knowledges .cell .cell-header .label {
         font-size: 1.9rem; }
-    section.knowledges .cell-body {
+    section.knowledges .cell .cell-body .tags {
       font-size: 1rem; }
     section.knowledges .right img {
       min-width: 54rem; }
     section.knowledges .left,
     section.knowledges .right {
       margin: 3rem; } }
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1700px) {
     section.knowledges .table {
       max-width: 60rem;
       margin: 7rem auto;
       border-width: 3px; }
     section.knowledges .right img {
       min-width: 30rem; } }
+  @media screen and (max-width: 1500px) {
+    section.knowledges .container .title {
+      font-size: 2rem; }
+    section.knowledges .container .text {
+      font-size: 1.5rem; } }
   @media screen and (max-width: 1200px) {
     section.knowledges .left,
     section.knowledges .right {
@@ -926,12 +939,16 @@ section.knowledges {
       display: none; } }
   @media screen and (max-width: 700px) {
     section.knowledges .left {
-      margin: 5rem; }
+      margin: auto; }
+    section.knowledges .container {
+      max-width: 40rem;
+      margin: auto; }
     section.knowledges .container .title {
-      font-size: 2rem; }
+      font-size: 2rem;
+      text-align: center; }
     section.knowledges .container .text {
       font-size: 1.5rem;
-      margin: 0 8rem; }
+      max-width: 100%; }
     section.knowledges .table {
       min-width: 25rem;
       border-width: 2px; }
