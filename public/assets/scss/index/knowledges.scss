@@ -262,6 +262,7 @@ section.knowledges {
     }
     .container .text {
       font-size: 1.4rem;
+      max-width: 70%;
     }
     .table {
       min-width: 40rem;
@@ -274,7 +275,7 @@ section.knowledges {
       margin: auto;
     }
     .right img {
-      min-width: 40rem;
+      display: none;
     }
   }
   @include media(700) {
