@@ -35,7 +35,7 @@ class Carousel {
         itemWidth: "auto",
         itemsSpace: 0,
         centeredItem: false,
-        carouselWidth: "100%"
+        carouselWidth: "100%",
       },
       options
     );
@@ -45,9 +45,9 @@ class Carousel {
       this.childrenWidth.push(this.element.children[i].offsetWidth);
     }
     let persoStyle = this.createElement("style");
-    this.root = this.createElement("div", {class: "carousel", tabindex: "0"});
+    this.root = this.createElement("div", { class: "carousel", tabindex: "0" });
     this.element.style.width = this.options.carouselWidth;
-    this.container = this.createElement("div", {class: "carouselContainer"});
+    this.container = this.createElement("div", { class: "carouselContainer" });
     this.currentItem = this.options.index;
     this.moveCallbacks = [];
     this.isMobile = window.innerWidth < 800;
@@ -62,11 +62,11 @@ class Carousel {
 
     // Edit DOM
     this.items = children.map((child) => {
-      let item = this.createElement("div", {class: "carouselItem"});
+      let item = this.createElement("div", { class: "carouselItem" });
       item.appendChild(child);
       this.container.appendChild(item);
       return item;
-    })
+    });
     this.root.appendChild(this.container);
     this.element.appendChild(this.root);
     let linkCss = this.createElement("link", {
@@ -93,6 +93,7 @@ class Carousel {
       else if (e.key === "ArrowLeft" || e.key === "Left") this.prev();
     });
     window.addEventListener("resize", this.onWindowResize.bind(this));
+    this.gotoItem(0);
   }
 
   setStyle() {
@@ -162,17 +163,20 @@ class Carousel {
     this.root.appendChild(pagination);
     for (let i = 0; i < this.items.length; i = i + this.slidesToScroll) {
       let button = this.createElement("div", {
-        class: "carouselPaginationButton"
+        class: "carouselPaginationButton",
       });
       button.addEventListener("click", () => this.gotoItem(i));
       pagination.appendChild(button);
       buttons.push(button);
     }
-    this.onMove((index => {
+    this.onMove((index) => {
       let activeButton = buttons[Math.floor(index / this.slidesToScroll)];
-      buttons.forEach(btn => btn.classList.remove("carouselPaginationButtonActive"));
-      if (activeButton) activeButton.classList.add("carouselPaginationButtonActive");
-    }))
+      buttons.forEach((btn) =>
+        btn.classList.remove("carouselPaginationButtonActive")
+      );
+      if (activeButton)
+        activeButton.classList.add("carouselPaginationButtonActive");
+    });
   }
 
   next() {
@@ -203,13 +207,30 @@ class Carousel {
       (this.items[this.currentItem + this.slidesVisible] === undefined &&
         index > this.currentItem)
     ) {
-      if (this.options.loop === false && this.options.autoplay === false) return;
+      if (this.options.loop === false && this.options.autoplay === false)
+        return;
       index = 0;
     }
-    let translateX = index * -100 / this.items.length + "%";
-    if (this.options.centeredItem) translateX = "calc(" + index * -100 / this.items.length + "%" + " + " + this.options.itemsSpace / this.slidesVisible + "px)";
-    if (this.options.centeredItem && this.slidesVisible === 1) translateX = "calc(" + index * -100 / this.items.length + "%" + " - " + this.options.itemsSpace * index + "px)";
-    this.container.style.transform = `translate3d(calc(${translateX} + ${this.options.itemsSpace * index}px), 0, 0)`;
+    let translateX = (index * -100) / this.items.length + "%";
+    if (this.options.centeredItem)
+      translateX =
+        "calc(" +
+        (index * -100) / this.items.length +
+        "%" +
+        " + " +
+        this.options.itemsSpace / this.slidesVisible +
+        "px)";
+    if (this.options.centeredItem && this.slidesVisible === 1)
+      translateX =
+        "calc(" +
+        (index * -100) / this.items.length +
+        "%" +
+        " - " +
+        this.options.itemsSpace * index +
+        "px)";
+    this.container.style.transform = `translate3d(calc(${translateX} + ${
+      this.options.itemsSpace * index
+    }px), 0, 0)`;
     this.currentItem = index;
 
     this.moveCallbacks.forEach((cb) => cb(index));
@@ -290,4 +311,3 @@ new Carousel(
     centeredItem: true,
   }
 );
-
