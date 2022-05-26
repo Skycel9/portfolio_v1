@@ -913,7 +913,8 @@ section.knowledges {
     section.knowledges .container .title {
       font-size: 2rem; }
     section.knowledges .container .text {
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      max-width: 70%; }
     section.knowledges .table {
       min-width: 40rem;
       transform: skewY(0); }
@@ -922,7 +923,7 @@ section.knowledges {
     section.knowledges .right {
       margin: auto; }
     section.knowledges .right img {
-      min-width: 40rem; } }
+      display: none; } }
   @media screen and (max-width: 700px) {
     section.knowledges .left {
       margin: 5rem; }
@@ -988,22 +989,56 @@ footer.footer {
   width: 100%;
   background: #151515; }
   footer.footer .container {
-    padding: 60px;
+    padding: 6rem 15rem;
     display: flex;
     justify-content: space-between;
     align-items: center; }
     footer.footer .container .copyright {
-      font-size: 1.8rem;
+      font-size: 2.8rem;
       color: #DDDDDD; }
     footer.footer .container .links {
-      width: 20%;
+      width: 15%;
       display: flex;
       justify-content: space-around;
       list-style: none; }
       footer.footer .container .links .link .icon {
         color: #A0A0A0;
-        width: 3rem;
-        height: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
         transition: color 0.3s ease-in-out; }
         footer.footer .container .links .link .icon:hover {
           color: #FA784F; }
+  @media screen and (max-width: 2300px) {
+    footer.footer .container {
+      padding: 6rem 10rem; }
+    footer.footer .container .copyright {
+      font-size: 2.5rem; }
+    footer.footer .container .links .link .icon {
+      width: 3rem;
+      height: 3rem; } }
+  @media screen and (max-width: 1800px) {
+    footer.footer .container .copyright {
+      font-size: 2rem; }
+    footer.footer .container .links {
+      width: 20%; }
+      footer.footer .container .links .link .icon {
+        width: 2.5rem;
+        height: 2.5rem; } }
+  @media screen and (max-width: 1200px) {
+    footer.footer .container {
+      padding: 6rem; } }
+  @media screen and (max-width: 900px) {
+    footer.footer .container .copyright {
+      font-size: 1.5rem; }
+    footer.footer .container .links .link .icon {
+      width: 2rem;
+      height: 2rem; } }
+  @media screen and (max-width: 700px) {
+    footer.footer .container {
+      flex-direction: column;
+      padding: 3rem;
+      text-align: center; }
+    footer.footer .container .links {
+      margin-top: 3rem;
+      width: 25%;
+      min-width: 15rem; } }
