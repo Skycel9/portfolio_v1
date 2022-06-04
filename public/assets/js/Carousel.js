@@ -161,11 +161,11 @@ class Carousel {
     });
     let buttons = [];
     this.root.appendChild(pagination);
-    for (let i = 0; i < this.items.length; i = i + this.slidesToScroll) {
+    for (let i = 1; i < this.items.length; i = i + this.slidesToScroll) {
       let button = this.createElement("div", {
         class: "carouselPaginationButton",
       });
-      button.addEventListener("click", () => this.gotoItem(i));
+      button.addEventListener("click", () => this.gotoItem(i - 1));
       pagination.appendChild(button);
       buttons.push(button);
     }
