@@ -36,10 +36,10 @@ main {
   align-items: center;
 
   @include media(2000) {
-    padding: 250px 15%;
+    padding: 250px 12%;
   }
   @include media(1800) {
-    padding: 175px 15%;
+    padding: 175px 12%;
   }
   @include media(1500) {
     padding: 175px 10%;

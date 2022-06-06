@@ -1,9 +1,9 @@
-main.contact {
+main {
   padding: 0;
   width: 100vw;
 }
 
-main.contact .container {
+main .container {
   margin-top: 7rem;
   display: flex;
   justify-content: space-around;
@@ -25,7 +25,7 @@ main.contact .container {
     }
   }
 
-  .contacts {
+  .contact {
     margin: 10rem 0;
     width: 80%;
     display: flex;
