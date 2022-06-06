@@ -1,0 +1,181 @@
+main {
+  padding: 0;
+  width: 100vw;
+}
+
+main .container {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-around;
+
+  .title {
+    font-size: 4rem;
+    color: map-get($colors, text);
+    text-align: center;
+    max-width: 80%;
+  }
+  .text {
+    font-size: 2.5rem;
+    color: map-get($colors, text-60);
+    max-width: 80%;
+    text-align: center;
+
+    .main {
+      color: map-get($colors, main);
+    }
+  }
+
+  .contact {
+    margin: 10rem 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .link {
+      display: flex;
+      font-size: 2.3rem;
+      align-items: center;
+      justify-content: center;
+      color: map-get($colors, text-60);
+      margin: 2rem;
+    }
+    .link .icon {
+      width: 6rem;
+      height: 6rem;
+      margin-right: 3rem;
+    }
+    .link .content .label {
+      color: map-get($colors, main-60);
+    }
+  }
+
+  .social-network {
+    margin: 7rem 0;
+  }
+  .subtitle {
+    font-size: 3rem;
+    color: map-get($colors, text-80);
+    text-align: center;
+    max-width: 80%;
+  }
+  .links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 80%;
+    margin-top: 7rem;
+
+    .link {
+      font-size: 2.5rem;
+      color: map-get($colors, text-60);
+      text-align: center;
+      margin: 2rem;
+
+      &:hover {
+        color: map-get($colors, main-60);
+      }
+      .icon {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+
+  .left,
+  .right {
+    margin: 3rem;
+  }
+  .right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      min-width: 64rem;
+    }
+  }
+  @include media(2000) {
+    justify-content: space-between;
+    .right {
+      width: auto;
+    }
+    .left {
+      width: 60%;
+    }
+    .title,
+    .text,
+    .contact,
+    .links-container,
+    .subtitle {
+      max-width: 100%;
+    }
+    .contact .link .icon,
+    .links-container .link .icon {
+      width: 5rem;
+      height: 5rem;
+    }
+    .right img {
+      min-width: auto;
+    }
+  }
+  @include media(1800) {
+    .title {
+      font-size: 3rem;
+    }
+    .text {
+      font-size: 2rem;
+    }
+    .contact,
+    .social-network,
+    .links-container {
+      margin: 4rem 0;
+    }
+    .contact .link .icon,
+    .links-container .link .icon {
+      width: 4rem;
+      height: 4rem;
+    }
+    .contact .link,
+    .links-container .link {
+      font-size: 2rem;
+    }
+  }
+  @include media(1400) {
+    margin-top: 5rem;
+    .title,
+    .subtitle {
+      font-size: 2rem;
+    }
+    .text {
+      font-size: 1.8rem;
+    }
+    .contact .link,
+    .links-container .link {
+      font-size: 1.5rem;
+    }
+    .contact .link .icon,
+    .links-container .link .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    .right img {
+      width: 75%;
+    }
+  }
+  @include media(1200) {
+    .text {
+      font-size: 1.5rem;
+    }
+    .contact, .links-container, .social-network {
+      margin: 1rem 0;
+    }
+  }
+  @include media(950) {
+    justify-content: center;
+    .right {
+      display: none;
+    }
+  }
+}
