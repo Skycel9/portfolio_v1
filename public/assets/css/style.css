@@ -813,7 +813,7 @@ section.projects {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: height 1s ease-in-out, width 1s ease-in-out, opacity 1s ease-in-out; }
+      transition: height 1s ease-in-out, width 1s ease-in-out, opacity 1s ease-in-out; }
     section.projects .container .project .title {
       font-size: 3rem;
       margin: 0 0 3rem 0; }
@@ -1069,7 +1069,8 @@ section.knowledges {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #777777; }
+      color: #777777;
+      text-align: center; }
   @media screen and (max-width: 2300px) {
     section.knowledges .container .title {
       font-size: 3rem; }
@@ -1117,7 +1118,7 @@ section.knowledges {
       margin: 2rem; }
     section.knowledges .cell .cell-header {
       width: 70%;
-      justify-content: start; }
+      justify-content: center; }
       section.knowledges .cell .cell-header .icon {
         width: 3.5rem;
         height: 3.5rem;

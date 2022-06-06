@@ -150,6 +150,7 @@ section.knowledges {
       justify-content: center;
       align-items: center;
       color: darken(map-get($colors, text), 40%);
+      text-align: center;
     }
   }
 
@@ -227,7 +228,7 @@ section.knowledges {
     }
     .cell .cell-header {
       width: 70%;
-      justify-content: start;
+      justify-content: center;
 
       .icon {
         width: 3.5rem;
