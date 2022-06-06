@@ -8,6 +8,7 @@ folders.forEach((folder) => {
   folder.addEventListener("click", (e) => {
     e.preventDefault();
     const targetFolder = e.path.filter((el) => el.tagName === "A")[0];
+    if (targetFolder.getAttribute("data-access") === "deny") return;
     targetFolder.classList.toggle("toggle");
 
     const icons = Array.from(
