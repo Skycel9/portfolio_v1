@@ -66,3 +66,12 @@ body {
     border: 3px solid lighten($color: map-get($colors, nav-bg), $amount: 5);
   }
 }
+
+img, video {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
