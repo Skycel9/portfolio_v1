@@ -37,6 +37,9 @@ main {
   @media screen and (max-width: 1800px) {
     main {
       padding: 175px 15%; } }
+  @media screen and (max-width: 1500px) {
+    main {
+      padding: 175px 10%; } }
   @media screen and (max-width: 1200px) {
     main {
       padding: 100px 0; } }
@@ -730,6 +733,230 @@ section.about {
       min-width: 230px; }
     section.about .right {
       max-width: 400px; } }
+
+.hidden {
+  opacity: 0;
+  height: 0 !important;
+  width: 0 !important; }
+
+section.projects {
+  width: 100%; }
+  section.projects .title {
+    font-size: 3.5rem;
+    color: #DDDDDD; }
+  section.projects .container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5rem; }
+    section.projects .container nav.projects-nav {
+      display: flex;
+      align-items: center; }
+    section.projects .container nav.projects-nav ul {
+      list-style: none; }
+      section.projects .container nav.projects-nav ul li {
+        margin: 2rem 0; }
+      section.projects .container nav.projects-nav ul li .link {
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+        padding: 1rem 2rem;
+        color: #DDDDDD;
+        transition: background 0.3s ease-in-out; }
+        section.projects .container nav.projects-nav ul li .link.personal, section.projects .container nav.projects-nav ul li .link.personal:hover {
+          cursor: not-allowed;
+          color: #DDDDDD; }
+        section.projects .container nav.projects-nav ul li .link:hover {
+          color: #FA784F; }
+        section.projects .container nav.projects-nav ul li .link.toggle + ul.projects-list {
+          max-height: 0; }
+      section.projects .container nav.projects-nav ul li .link .icon {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2rem;
+        opacity: 1;
+        transition: opacity 0.4s ease-in-out; }
+        section.projects .container nav.projects-nav ul li .link .icon.hidden {
+          opacity: 0; }
+      section.projects .container nav.projects-nav ul.projects-list {
+        margin-left: 7rem;
+        max-height: 26rem;
+        position: relative;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out; }
+        section.projects .container nav.projects-nav ul.projects-list .tree-view {
+          position: absolute;
+          left: -35px;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 95%;
+          width: 3px;
+          border-radius: 2px;
+          background: #292929;
+          transition: background 0.5s ease-in-out; }
+      section.projects .container nav.projects-nav ul.projects-list .link.active {
+        background: #222222; }
+    section.projects .container .projects-preview {
+      width: 50%;
+      height: 100%;
+      max-height: 75rem;
+      background: #1c1c1c;
+      border-radius: 50px;
+      overflow-y: hidden;
+      transition: max-height 1s ease-in-out; }
+    section.projects .container .projects-container {
+      transition: transform 0.5s ease-in-out; }
+    section.projects .container .project {
+      height: 100%;
+      padding: 5rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: height 1s ease-in-out, width 1s ease-in-out, opacity 1s ease-in-out; }
+    section.projects .container .project .title {
+      font-size: 3rem;
+      margin: 0 0 3rem 0; }
+    section.projects .container .project .preview {
+      width: 75%;
+      border-radius: 5rem;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      transition: filter 0.5s ease; }
+    section.projects .container .project video.preview {
+      filter: blur(2px) brightness(50%); }
+    section.projects .container .project .preview.playing {
+      filter: none; }
+    section.projects .container .project-preview-container {
+      position: relative; }
+    section.projects .container .project .playBtn {
+      height: 7rem;
+      width: 7rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    section.projects .container .project .playBtn .icon {
+      color: #DDDDDD;
+      width: inherit;
+      height: inherit; }
+    section.projects .container .project .description {
+      font-size: 2.5rem;
+      color: #CFCFCF;
+      margin-top: 3rem;
+      line-height: 1.5; }
+  @media screen and (max-width: 2300px) {
+    section.projects .title {
+      font-size: 3rem; }
+    section.projects .container nav.projects-nav ul li .link {
+      font-size: 2.5rem; }
+      section.projects .container nav.projects-nav ul li .link .icon {
+        width: 3.5rem;
+        height: 3.5rem; }
+    section.projects .container .projects-preview {
+      max-height: 65rem; }
+    section.projects .container .project .title {
+      font-size: 2.5rem; }
+    section.projects .container .project .description {
+      font-size: 2rem; } }
+  @media screen and (max-width: 2000px) {
+    section.projects .title {
+      font-size: 2.8rem; }
+    section.projects .container .projects-preview {
+      width: 55%;
+      max-height: 59rem; }
+    section.projects .container nav.projects-nav ul li {
+      margin: 1rem 0; }
+    section.projects .container nav.projects-nav ul li .link {
+      font-size: 2rem;
+      border-radius: 1.5rem; }
+      section.projects .container nav.projects-nav ul li .link .icon {
+        width: 3rem;
+        height: 3rem; }
+    section.projects .container .project .project-preview-container .playBtn {
+      width: 5.5rem;
+      height: 5.5rem; }
+    section.projects .container .project .preview {
+      border-radius: 3.5rem; }
+    section.projects .container .project .description {
+      font-size: 1.7rem; } }
+  @media screen and (max-width: 1500px) {
+    section.projects .title {
+      font-size: 2rem; }
+    section.projects .container .projects-preview {
+      max-height: 52rem; }
+    section.projects .container nav.projects-nav ul li .link {
+      font-size: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 1rem; }
+      section.projects .container nav.projects-nav ul li .link .icon {
+        width: 2.5rem;
+        height: 2.5rem; }
+    section.projects .container .project .title {
+      font-size: 1.7rem; }
+    section.projects .container .project .preview {
+      width: 85%; }
+    section.projects .container .project .project-preview-container .playBtn {
+      width: 4rem;
+      height: 4rem; }
+    section.projects .container .project .description {
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 1200px) {
+    section.projects {
+      margin: 0 3rem;
+      width: auto; }
+      section.projects .title {
+        margin: 4rem 5rem; }
+      section.projects .container .project .preview {
+        width: 75%;
+        border-radius: 2.5rem; }
+      section.projects .container .projects-preview {
+        max-height: 48rem; } }
+  @media screen and (max-width: 1000px) {
+    section.projects .container {
+      flex-direction: column;
+      align-items: center; }
+    section.projects .container nav.projects-nav {
+      margin-bottom: 3rem; }
+    section.projects .container nav.projects-nav ul li .link[data-type="folder"] {
+      display: none;
+      margin: 0; }
+    section.projects .container nav.projects-nav ul.folder-list,
+    section.projects ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+    section.projects .container nav.projects-nav ul.folder-list li {
+      margin: 0; }
+    section.projects .container nav.projects-nav ul.projects-list {
+      margin: 0; }
+    section.projects .container .projects-preview {
+      width: 80%;
+      max-height: 52rem; } }
+  @media screen and (max-width: 800px) {
+    section.projects .container .projects-preview {
+      max-height: 50rem; }
+    section.projects .container .project .preview {
+      border-radius: 1.5rem; }
+    section.projects .container nav.projects-nav ul li .link {
+      white-space: nowrap; }
+      section.projects .container nav.projects-nav ul li .link .icon {
+        margin-right: 1rem; } }
+  @media screen and (max-width: 650px) {
+    section.projects .container .project {
+      padding: 5rem 3rem; }
+    section.projects .container .project .preview {
+      width: 90%;
+      max-width: 90%; } }
+  @media screen and (max-width: 500px) {
+    section.projects .container .projects-preview {
+      max-height: 49rem;
+      width: 100%; } }
+  @media screen and (max-width: 300px) {
+    section.projects .container .projects-preview {
+      border-radius: 2rem; }
+    section.projects .container .project {
+      padding: 5rem 1.5rem 6.5rem 1.5rem; } }
 
 section.knowledges {
   width: 100%; }

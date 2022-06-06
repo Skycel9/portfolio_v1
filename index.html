@@ -149,7 +149,7 @@
           />
         </div>
       </header>
-      <section class="about">
+      <section class="about" id="about">
         <div class="left">
           <img
             src="./public/assets/img/Building-website.svg"
@@ -243,6 +243,230 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <h3 class="title">Mes projets</h3>
+        <div class="container">
+          <nav class="projects-nav">
+            <ul class="folder-list">
+              <li>
+                <a class="link personal" data-type="folder">
+                  <svg class="icon">
+                    <use
+                      xlink:href="./public/assets/img/Sprite-icons.svg#Locked-folder"
+                    ></use>
+                  </svg>
+                  <p class="label">Skycel's life</p>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="link"
+                  data-type="folder"
+                  data-name="development"
+                  data-state="open"
+                >
+                  <svg class="icon">
+                    <use
+                      xlink:href="./public/assets/img/Sprite-icons.svg#Folder-open"
+                      class="open"
+                    ></use>
+                    <use
+                      xlink:href="./public/assets/img/Sprite-icons.svg#Folder"
+                      class="close hidden"
+                    ></use>
+                  </svg>
+                  <p class="label">Développement</p>
+                </a>
+
+                <ul class="projects-list">
+                  <div class="tree-view"></div>
+                  <li>
+                    <a
+                      href="#"
+                      class="link active"
+                      data-type="project"
+                      data-name="all-smoks"
+                      data-projectID="1"
+                    >
+                      <svg class="icon">
+                        <use
+                          xlink:href="./public/assets/img/Sprite-icons.svg#Web-globe"
+                        ></use>
+                      </svg>
+                      <p class="label">All-smoks</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link"
+                      data-type="project"
+                      data-name="bot-discord"
+                      data-projectID="2"
+                    >
+                      <svg class="icon">
+                        <use
+                          xlink:href="./public/assets/img/Sprite-icons.svg#Filetype-js"
+                        ></use>
+                      </svg>
+                      <p class="label">Bot discord</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link"
+                      data-type="project"
+                      data-name="login-system"
+                      data-projectID="3"
+                    >
+                      <svg class="icon">
+                        <use
+                          xlink:href="./public/assets/img/Sprite-icons.svg#Filetype-php"
+                        ></use>
+                      </svg>
+                      <p class="label">Système de compte</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="link"
+                  data-type="folder"
+                  data-name="audiovisual"
+                  data-state="open"
+                >
+                  <svg class="icon">
+                    <use
+                      xlink:href="./public/assets/img/Sprite-icons.svg#Folder-open"
+                      class="open"
+                    ></use>
+                    <use
+                      xlink:href="./public/assets/img/Sprite-icons.svg#Folder"
+                      class="close hidden"
+                    ></use>
+                  </svg>
+                  <p class="label">Audiovisuel</p>
+                </a>
+                <ul class="projects-list">
+                  <div class="tree-view"></div>
+                  <li>
+                    <a
+                      href="#"
+                      class="link"
+                      data-type="project"
+                      data-name="webschool"
+                      data-projectID="4"
+                    >
+                      <svg class="icon">
+                        <use
+                          xlink:href="./public/assets/img/Sprite-icons.svg#Editor-video"
+                        ></use>
+                      </svg>
+                      <p class="label">WebSchool</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--<li>
+                <a href="#" class="link" data-type="folder" data-name="design" data-state="open">
+                  <svg class="icon">
+                    <use xlink:href="./public/assets/img/Sprite-icons.svg#Folder-open" class="open"></use>
+                    <use xlink:href="./public/assets/img/Sprite-icons.svg#Folder" class="close hidden"></use>
+                  </svg>
+                  <p class="label">Design</p>
+                </a>
+              </li>-->
+            </ul>
+          </nav>
+          <article class="projects-preview">
+            <div class="projects-container">
+              <div class="project" id="allsmoks" data-projectID="1">
+                <h2 class="title">All-smoks</h2>
+                <div class="project-preview-container">
+                  <img
+                    src="./public/assets/img/All-smoks.jpg"
+                    class="preview"
+                    alt="Preview du site web All-smoks"
+                  />
+                </div>
+
+                <p class="description">
+                  All-smoks est un projet de site E-commerce qui a été lancé
+                  avec des amis pour la vente de liquide de cigarette
+                  électronique. Le site n'est actuellement plus disponible est
+                  ligne mais a été entièrement réalisé par mes soins. Du design
+                  jusqu'à l'intégration aidé par un ami.
+                </p>
+              </div>
+              <div class="project" id="bot-discord" data-projectID="2">
+                <h2 class="title">ManagerStonks</h2>
+                <div class="project-preview-container">
+                  <img
+                    src="./public/assets/img/ManagerStonks.jpg"
+                    class="preview"
+                    alt='Preview du site web relatif au bot discord "ManagerStonks"'
+                  />
+                </div>
+
+                <p class="description">
+                  Ce site web est relatif à un projet de bot discord qui a été
+                  réalisé au début de mon apprentissage du développement. Le bot
+                  est le site ont été mis en attente suite à la venue d'autres
+                  projets perfectionnement mon apprentissage. Mais il est tout à
+                  fait envisageable de les reprendre dans le futur.
+                </p>
+              </div>
+              <div class="project" id="login" data-projectID="3">
+                <h2 class="title">Système de compte</h2>
+                <div class="project-preview-container">
+                  <img
+                    src="./public/assets/img/Login-system.jpg"
+                    class="preview"
+                    alt='Preview du formulaire de login du système de compte"'
+                  />
+                </div>
+
+                <p class="description">
+                  Ce petit projet réalisé en php a eu pour but d'apprendre les
+                  notions de bases du langage. Le design n'étant pas le but
+                  principal du projet l'interface utilisateur reste discutable.
+                  Dans ce projet les mots de passes sont hashés afin de garantir
+                  un bon niveau de sécurité.
+                </p>
+              </div>
+              <div class="project" id="webschool" data-projectID="4">
+                <h2 class="title">WebSchool</h2>
+                <div class="project-preview-container">
+                  <video
+                    src="./public/assets/img/Ecole supérieur Webschool.mp4"
+                    class="preview"
+                    name="webschool"
+                    controls
+                    controlsList="nodownload"
+                  ></video>
+                  <a href="#" name="webschool" class="playBtn">
+                    <svg class="icon">
+                      <use
+                        xlink:href="./public/assets/img/Sprite-icons.svg#Play-circle"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+
+                <p class="description">
+                  Ce projet d’origine scolaire est un projet né pour un exposé
+                  sur une association fictive. Projet que nous avons accompagné
+                  d’un support vidéo dans le style reportage.
+                </p>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
       <section class="knowledges" id="knowledges">
@@ -615,26 +839,42 @@
       <div class="container">
         <p class="copyright">© 2022 Développé et designé avec 🖤 par Skycel</p>
         <ul class="links">
-          <li><a href="#" class="link">
-            <svg class="icon">
-              <use xlink:href="./public/assets/img/Sprite-icons.svg#Discord-brand"></use>
-            </svg>
-          </a></li>
-          <li><a href="#" class="link">
-            <svg class="icon">
-              <use xlink:href="./public/assets/img/Sprite-icons.svg#Github-fill"></use>
-            </svg>
-          </a></li>
-          <li><a href="#" class="link">
-            <svg class="icon">
-              <use xlink:href="./public/assets/img/Sprite-icons.svg#Insta-brand"></use>
-            </svg>
-          </a></li>
-          <li><a href="#" class="link">
-            <svg class="icon">
-              <use xlink:href="./public/assets/img/Sprite-icons.svg#Linkedin-brand"></use>
-            </svg>
-          </a></li>
+          <li>
+            <a href="#" class="link">
+              <svg class="icon">
+                <use
+                  xlink:href="./public/assets/img/Sprite-icons.svg#Discord-brand"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link">
+              <svg class="icon">
+                <use
+                  xlink:href="./public/assets/img/Sprite-icons.svg#Github-fill"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link">
+              <svg class="icon">
+                <use
+                  xlink:href="./public/assets/img/Sprite-icons.svg#Insta-brand"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link">
+              <svg class="icon">
+                <use
+                  xlink:href="./public/assets/img/Sprite-icons.svg#Linkedin-brand"
+                ></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
@@ -642,5 +882,7 @@
     <script src="./public/assets/js/Nav.js" defer></script>
     <script src="./public/assets/js/Carousel.js" defer></script>
     <script src="./public/assets/js/Knowledges.js" defer></script>
+    <script src="./public/assets/js/Project-nav.js" defer></script>
+    <script src="./public/assets/js/Video.js" defer></script>
   </body>
 </html>
