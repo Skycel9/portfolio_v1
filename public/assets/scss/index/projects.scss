@@ -1,0 +1,311 @@
+@import "../utils/global";
+section.projects {
+  width: 100%;
+
+  .title {
+    font-size: 3.5rem;
+    color: map-get($colors, text);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5rem;
+
+    nav.projects-nav {
+      display: flex;
+      align-items: center;
+    }
+    nav.projects-nav ul {
+      list-style: none;
+      li {
+        margin: 2rem 0;
+      }
+      li .link {
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+        padding: 1rem 2rem;
+        color: map-get($colors, text);
+        transition: background 0.3s ease-in-out;
+
+        &.personal,
+        &.personal:hover {
+          cursor: not-allowed;
+          color: map-get($colors, text);
+        }
+        &:hover {
+          color: map-get($colors, main);
+        }
+        &.toggle + ul.projects-list {
+          max-height: 0;
+        }
+      }
+      li .link .icon {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2rem;
+        opacity: 1;
+        transition: opacity 0.4s ease-in-out;
+
+        &.hidden {
+          opacity: 0;
+        }
+      }
+      &.projects-list {
+        margin-left: 7rem;
+        max-height: 26rem;
+        position: relative;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+
+        .tree-view {
+          position: absolute;
+          left: -35px;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 95%;
+          width: 3px;
+          border-radius: 2px;
+          background: #292929;
+          transition: background 0.5s ease-in-out;
+        }
+      }
+      &.projects-list .link.active {
+        background: #222222;
+      }
+    }
+
+    .projects-preview {
+      width: 50%;
+      height: 100%;
+      max-height: 75rem;
+      background: #1c1c1c;
+      border-radius: 50px;
+      overflow-y: hidden;
+      transition: max-height 1s ease-in-out;
+    }
+
+    .projects-container {
+      transition: transform 0.5s ease-in-out;
+    }
+    .project {
+      height: 100%;
+      padding: 5rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: height 1s ease-in-out, width 1s ease-in-out,
+        opacity 1s ease-in-out;
+    }
+    .project .title {
+      font-size: 3rem;
+      margin: 0 0 3rem 0;
+    }
+    .project .preview {
+      width: 75%;
+      border-radius: 5rem;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      transition: filter 0.5s ease;
+    }
+    .project video.preview {
+      filter: blur(2px) brightness(50%);
+    }
+    .project .preview.playing {
+      filter: none;
+    }
+    .project-preview-container {
+      position: relative;
+    }
+    .project .playBtn {
+      height: 7rem;
+      width: 7rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .project .playBtn .icon {
+      color: map-get($colors, text);
+      width: inherit;
+      height: inherit;
+    }
+    .project .description {
+      font-size: 2.5rem;
+      color: map-get($colors, text-80);
+      margin-top: 3rem;
+      line-height: 1.5;
+    }
+  }
+
+  @include media(2300) {
+    .title {
+      font-size: 3rem;
+    }
+    .container nav.projects-nav ul li .link {
+      font-size: 2.5rem;
+
+      & .icon {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+    .container .projects-preview {
+      max-height: 65rem;
+    }
+    .container .project .title {
+      font-size: 2.5rem;
+    }
+    .container .project .description {
+      font-size: 2rem;
+    }
+  }
+  @include media(2000) {
+    .title {
+      font-size: 2.8rem;
+    }
+    .container .projects-preview {
+      width: 55%;
+      max-height: 59rem;
+    }
+    .container nav.projects-nav ul li {
+      margin: 1rem 0;
+    }
+    .container nav.projects-nav ul li .link {
+      font-size: 2rem;
+      border-radius: 1.5rem;
+
+      & .icon {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    .container .project .project-preview-container .playBtn {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+    .container .project .preview {
+      border-radius: 3.5rem;
+    }
+    .container .project .description {
+      font-size: 1.7rem;
+    }
+  }
+  @include media(1500) {
+    .title {
+      font-size: 2rem;
+    }
+    .container .projects-preview {
+      max-height: 52rem;
+    }
+    .container nav.projects-nav ul li .link {
+      font-size: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 1rem;
+
+      & .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+    .container .project .title {
+      font-size: 1.7rem;
+    }
+    .container .project .preview {
+      width: 85%;
+    }
+    .container .project .project-preview-container .playBtn {
+      width: 4rem;
+      height: 4rem;
+    }
+    .container .project .description {
+      font-size: 1.4rem;
+    }
+  }
+  @include media(1200) {
+    margin: 0 3rem;
+    width: auto;
+
+    .title {
+      margin: 4rem 5rem;
+    }
+
+    .container .project .preview {
+      width: 75%;
+      border-radius: 2.5rem;
+    }
+    .container .projects-preview {
+      max-height: 48rem;
+    }
+  }
+  @include media(1000) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .container nav.projects-nav {
+      margin-bottom: 3rem;
+    }
+    .container nav.projects-nav ul li .link[data-type="folder"] {
+      display: none;
+      margin: 0;
+    }
+    .container nav.projects-nav ul.folder-list,
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .container nav.projects-nav ul.folder-list li {
+      margin: 0;
+    }
+    .container nav.projects-nav ul.projects-list {
+      margin: 0;
+    }
+    .container .projects-preview {
+      width: 80%;
+      max-height: 52rem;
+    }
+  }
+  @include media(800) {
+    .container .projects-preview {
+      max-height: 50rem;
+    }
+    .container .project .preview {
+      border-radius: 1.5rem;
+    }
+    .container nav.projects-nav ul li .link {
+      white-space: nowrap;
+
+      .icon {
+        margin-right: 1rem;
+      }
+    }
+  }
+  @include media(650) {
+    .container .project {
+      padding: 5rem 3rem;
+    }
+    .container .project .preview {
+      width: 90%;
+      max-width: 90%;
+    }
+  }
+  @include media(500) {
+    .container .projects-preview {
+      max-height: 49rem;
+      width: 100%;
+    }
+  }
+  @include media(300) {
+    .container .projects-preview {
+      border-radius: 2rem;
+    }
+    .container .project {
+      padding: 5rem 1.5rem 6.5rem 1.5rem;
+    }
+  }
+}
