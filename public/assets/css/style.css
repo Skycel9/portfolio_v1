@@ -57,6 +57,14 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 3px solid #242424; }
 
+img, video {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
 header {
   width: 100%;
   user-select: none;
