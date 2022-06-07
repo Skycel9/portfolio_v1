@@ -1234,140 +1234,140 @@ section.knowledges {
 Contact
 ----------------------
 */
-main {
+main.contact {
   padding: 0;
   width: 100vw; }
 
-main .container {
+main.contact .container {
   margin-top: 7rem;
   display: flex;
   justify-content: space-around; }
-  main .container .title {
+  main.contact .container .title {
     font-size: 4rem;
     color: #DDDDDD;
     text-align: center;
     max-width: 80%; }
-  main .container .text {
+  main.contact .container .text {
     font-size: 2.5rem;
     color: #A0A0A0;
     max-width: 80%;
     text-align: center; }
-    main .container .text .main {
+    main.contact .container .text .main {
       color: #FA784F; }
-  main .container .contact {
+  main.contact .container .contacts {
     margin: 10rem 0;
     width: 80%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
-    main .container .contact .link {
+    main.contact .container .contacts .link {
       display: flex;
       font-size: 2.3rem;
       align-items: center;
       justify-content: center;
       color: #A0A0A0;
       margin: 2rem; }
-    main .container .contact .link .icon {
+    main.contact .container .contacts .link .icon {
       width: 6rem;
       height: 6rem;
       margin-right: 3rem; }
-    main .container .contact .link .content .label {
+    main.contact .container .contacts .link .content .label {
       color: #9D4F36; }
-  main .container .social-network {
+  main.contact .container .social-network {
     margin: 7rem 0; }
-  main .container .subtitle {
+  main.contact .container .subtitle {
     font-size: 3rem;
     color: #CFCFCF;
     text-align: center;
     max-width: 80%; }
-  main .container .links-container {
+  main.contact .container .links-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 80%;
     margin-top: 7rem; }
-    main .container .links-container .link {
+    main.contact .container .links-container .link {
       font-size: 2.5rem;
       color: #A0A0A0;
       text-align: center;
       margin: 2rem; }
-      main .container .links-container .link:hover {
+      main.contact .container .links-container .link:hover {
         color: #9D4F36; }
-      main .container .links-container .link .icon {
+      main.contact .container .links-container .link .icon {
         width: 6rem;
         height: 6rem; }
-  main .container .left,
-  main .container .right {
+  main.contact .container .left,
+  main.contact .container .right {
     margin: 3rem; }
-  main .container .right {
+  main.contact .container .right {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center; }
-    main .container .right img {
+    main.contact .container .right img {
       width: 100%;
       min-width: 64rem; }
   @media screen and (max-width: 2000px) {
-    main .container {
+    main.contact .container {
       justify-content: space-between; }
-      main .container .right {
+      main.contact .container .right {
         width: auto; }
-      main .container .left {
+      main.contact .container .left {
         width: 60%; }
-      main .container .title,
-      main .container .text,
-      main .container .contact,
-      main .container .links-container,
-      main .container .subtitle {
+      main.contact .container .title,
+      main.contact .container .text,
+      main.contact .container .contact,
+      main.contact .container .links-container,
+      main.contact .container .subtitle {
         max-width: 100%; }
-      main .container .contact .link .icon,
-      main .container .links-container .link .icon {
+      main.contact .container .contact .link .icon,
+      main.contact .container .links-container .link .icon {
         width: 5rem;
         height: 5rem; }
-      main .container .right img {
+      main.contact .container .right img {
         min-width: auto; } }
   @media screen and (max-width: 1800px) {
-    main .container .title {
+    main.contact .container .title {
       font-size: 3rem; }
-    main .container .text {
+    main.contact .container .text {
       font-size: 2rem; }
-    main .container .contact,
-    main .container .social-network,
-    main .container .links-container {
+    main.contact .container .contact,
+    main.contact .container .social-network,
+    main.contact .container .links-container {
       margin: 4rem 0; }
-    main .container .contact .link .icon,
-    main .container .links-container .link .icon {
+    main.contact .container .contact .link .icon,
+    main.contact .container .links-container .link .icon {
       width: 4rem;
       height: 4rem; }
-    main .container .contact .link,
-    main .container .links-container .link {
+    main.contact .container .contact .link,
+    main.contact .container .links-container .link {
       font-size: 2rem; } }
   @media screen and (max-width: 1400px) {
-    main .container {
+    main.contact .container {
       margin-top: 5rem; }
-      main .container .title,
-      main .container .subtitle {
+      main.contact .container .title,
+      main.contact .container .subtitle {
         font-size: 2rem; }
-      main .container .text {
+      main.contact .container .text {
         font-size: 1.8rem; }
-      main .container .contact .link,
-      main .container .links-container .link {
+      main.contact .container .contact .link,
+      main.contact .container .links-container .link {
         font-size: 1.5rem; }
-      main .container .contact .link .icon,
-      main .container .links-container .link .icon {
+      main.contact .container .contact .link .icon,
+      main.contact .container .links-container .link .icon {
         width: 2.5rem;
         height: 2.5rem; }
-      main .container .right img {
+      main.contact .container .right img {
         width: 75%; } }
   @media screen and (max-width: 1200px) {
-    main .container .text {
+    main.contact .container .text {
       font-size: 1.5rem; }
-    main .container .contact, main .container .links-container, main .container .social-network {
+    main.contact .container .contact, main.contact .container .links-container, main.contact .container .social-network {
       margin: 1rem 0; } }
   @media screen and (max-width: 950px) {
-    main .container {
+    main.contact .container {
       justify-content: center; }
-      main .container .right {
+      main.contact .container .right {
         display: none; } }
 
 /*
