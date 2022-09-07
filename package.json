@@ -4,9 +4,9 @@
   "description": "Skycel's portfolio",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass ./public/assets/scss/ -o ./public/assets/css",
-    "watch": "node-sass ./public/assets/scss -o ./public/assets/css -w",
-    "build": "node-sass ./public/assets/css/style.css ./public/assets/css/style.min.css --output-style compressed"
+    "compile": "sass ./public/assets/scss/style.scss ./public/assets/css/style.css",
+    "watch": "sass ./public/assets/scss/style.scss ./public/assets/css/style.css --watch --no-source-map",
+    "build": "sass ./public/assets/css/style.css ./public/assets/css/style.min.css --style=compressed --no-source-map"
   },
   "repository": {
     "type": "git",
