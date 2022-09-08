@@ -1,0 +1,38 @@
+// @Use
+// ----------------------
+
+@import './utils/medias';
+
+// Utilities
+// ---------------------
+
+@import './utils/colors';
+
+/*
+Components
+----------------------
+*/
+
+@import './components/global.scss';
+@import './components/navbar.scss';
+
+/*
+Index
+----------------------
+*/
+
+@import './index/index.scss';
+
+/*
+Contact
+----------------------
+*/
+
+@import "./contact/contact.scss";
+
+/*
+ Footer
+----------------------
+ */
+
+@import './components/footer.scss';

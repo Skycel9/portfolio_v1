@@ -4,8 +4,8 @@
   "description": "Skycel's portfolio",
   "main": "index.js",
   "scripts": {
-    "compile": "sass ./public/assets/scss/style.scss ./public/assets/css/style.css",
-    "watch": "sass ./public/assets/scss/style.scss ./public/assets/css/style.css --watch --no-source-map",
+    "compile": "sass ./public/assets/scss/style.scss ./public/assets/css/style.css --no-source-map",
+    "watch": "sass ./public/assets/scss/style.scss ./public/assets/css/style.css -watch --no-source-map",
     "build": "sass ./public/assets/css/style.css ./public/assets/css/style.min.css --style=compressed --no-source-map"
   },
   "repository": {
