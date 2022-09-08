@@ -1,888 +1,214 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./public/assets/libs/Normalize.css" />
-    <link rel="stylesheet" href="./public/assets/css/style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link
-      rel="shortcut icon"
-      href="./public/assets/img/Skycel.ico"
-      type="image/x-icon"
-    />
+  <link rel="stylesheet" href="./public/assets/libs/Normalize.css">
+  <link rel="stylesheet" href="./public/assets/css/style.min.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="shortcut icon" href="./public/assets/img/Skycel.ico" type="image/x-icon">
 
-    <title>Skycel - Développeur fullstack</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
+    rel="stylesheet">
 
-  <body>
-    <header>
-      <nav class="navbar" id="navbar">
-        <div class="container">
-          <div class="logo">
-            <img
-              src="./public/assets/img/Skycel.png"
-              alt="Logo skycel"
-              class="logo-img"
-            />
-            <h3 class="logo-text"><span>S</span>kycel<span>.</span></h3>
-          </div>
-          <ul class="links" id="nav-links">
-            <li class="item">
-              <a href="#">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Home"
-                  ></use>
-                </svg>
-                <p>Home</p>
-              </a>
-            </li>
-            <li class="item">
-              <a href="#">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Work"
-                  ></use>
-                </svg>
-                <p>Projets</p>
-              </a>
-            </li>
-            <li class="item">
-              <a href="#">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Book"
-                  ></use>
-                </svg>
-                <p>Compétences</p>
-              </a>
-            </li>
-            <li class="item">
-              <a href="#">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Doc-PJ"
-                  ></use>
-                </svg>
-                <p>CV</p>
-              </a>
-            </li>
-            <li class="item">
-              <a href="#">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Spider-web"
-                  ></use>
-                </svg>
-                <p>Aranéite</p>
-              </a>
-            </li>
-            <li class="item button">
-              <a href="#">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Mail"
-                  ></use>
-                </svg>
-                <p>Contact</p>
-              </a>
-            </li>
-          </ul>
-          <div class="right-container">
-            <a href="#" class="toggle-btn" id="nav-toggle">
-              <div class="bar bar-1"></div>
-              <div class="bar bar-2"></div>
-              <div class="bar bar-3"></div>
-            </a>
-            <a href="#" class="button">
-              <svg class="icon">
-                <use
-                  xlink:href="./public/assets/img/Sprite-icons.svg#Mail"
-                ></use>
-              </svg>
-              <p>Contact</p>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <header class="banner">
-        <div class="left">
-          <h2 class="title">
-            <span>>_</span> Hello
-            <span class="nobr">world!<span class="cursor"></span></span>
-          </h2>
-          <h1 class="title">
-            Je suis Célian BURST, <br />Développeur web
-            <span class="nobr">fullstack</span>
-          </h1>
-          <div class="cta-container">
-            <a href="#" class="button primary">
-              <svg class="icon">
-                <use
-                  xlink:href="./public/assets/img/Sprite-icons.svg#Mail"
-                ></use>
-              </svg>
-              <p>Contact</p>
-            </a>
-            <a href="#" class="button secondary">
-              <p>Voir mes projets</p>
-            </a>
-          </div>
-          <p class="text">En avant pour la visite ! <span>&rarr;</span></p>
-        </div>
-        <div class="right">
-          <img
-            src="public/assets/img/Character.svg"
-            alt="Illustration d'un personnage assis à un bureau utilisant un ordinateur"
-          />
-        </div>
-      </header>
-      <section class="about" id="about">
-        <div class="left">
-          <img
-            src="./public/assets/img/Building-website.svg"
-            alt="Illustartion de personnages créant un site web"
-          />
-        </div>
-        <div class="right">
-          <div class="container">
-            <h3 class="title">À propos de moi</h3>
-            <p class="text">
-              Lycéen en classe de terminale, passionné d’informatique je suis à
-              même de construire en maintenir un projet web. Le développement
-              n’étant cependant qu’un des nombreux domaines aux quels je porte
-              une attention particulière...
-            </p>
-          </div>
-          <div class="container">
-            <h3 class="title">Mes centres d'intérêts</h3>
-            <div id="carousel1">
-              <div class="item main">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Laptop"
-                  ></use>
-                </svg>
-                <p class="label">Frontend</p>
-              </div>
-              <div class="item second">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Server"
-                  ></use>
-                </svg>
-                <p class="label">Backend</p>
-              </div>
-              <div class="item third">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Database"
-                  ></use>
-                </svg>
-                <p class="label">Base de données</p>
-              </div>
-              <div class="item main">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#World-meridians"
-                  ></use>
-                </svg>
-                <p class="label">HTTP</p>
-              </div>
-              <div class="item second">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Paint-brush"
-                  ></use>
-                </svg>
-                <p class="label">UX/UI Design</p>
-              </div>
-              <div class="item third">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Video"
-                  ></use>
-                </svg>
-                <p class="label">Audiovisuel</p>
-              </div>
-              <div class="item main">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Fire"
-                  ></use>
-                </svg>
-                <p class="label">Sapeur-pompier</p>
-              </div>
-              <div class="item second">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Basket-sport"
-                  ></use>
-                </svg>
-                <p class="label">Sport</p>
-              </div>
-              <div class="item third">
-                <svg class="icon">
-                  <use
-                    xlink:href="./public/assets/img/Sprite-icons.svg#Communication-bubble"
-                  ></use>
-                </svg>
-                <p class="label">Communication</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="projects" id="projects">
-        <h3 class="title">Mes projets</h3>
-        <div class="container">
-          <nav class="projects-nav">
-            <ul class="folder-list">
-              <li>
-                <a class="link personal" data-type="folder" data-access="deny">
-                  <svg class="icon">
-                    <use
-                      xlink:href="./public/assets/img/Sprite-icons.svg#Locked-folder"
-                    ></use>
-                  </svg>
-                  <p class="label">Skycel's life</p>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="link"
-                  data-type="folder"
-                  data-name="development"
-                  data-state="open"
-                >
-                  <svg class="icon">
-                    <use
-                      xlink:href="./public/assets/img/Sprite-icons.svg#Folder-open"
-                      class="open"
-                    ></use>
-                    <use
-                      xlink:href="./public/assets/img/Sprite-icons.svg#Folder"
-                      class="close hidden"
-                    ></use>
-                  </svg>
-                  <p class="label">Développement</p>
-                </a>
+  <title>Skycel - Développeur fullstack</title>
+</head>
 
-                <ul class="projects-list">
-                  <div class="tree-view"></div>
-                  <li>
-                    <a
-                      href="#"
-                      class="link active"
-                      data-type="project"
-                      data-name="all-smoks"
-                      data-projectID="1"
-                    >
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Web-globe"
-                        ></use>
-                      </svg>
-                      <p class="label">All-smoks</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="link"
-                      data-type="project"
-                      data-name="bot-discord"
-                      data-projectID="2"
-                    >
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Filetype-js"
-                        ></use>
-                      </svg>
-                      <p class="label">Bot discord</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="link"
-                      data-type="project"
-                      data-name="login-system"
-                      data-projectID="3"
-                    >
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Filetype-php"
-                        ></use>
-                      </svg>
-                      <p class="label">Système de compte</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="link"
-                  data-type="folder"
-                  data-name="audiovisual"
-                  data-state="open"
-                >
-                  <svg class="icon">
-                    <use
-                      xlink:href="./public/assets/img/Sprite-icons.svg#Folder-open"
-                      class="open"
-                    ></use>
-                    <use
-                      xlink:href="./public/assets/img/Sprite-icons.svg#Folder"
-                      class="close hidden"
-                    ></use>
-                  </svg>
-                  <p class="label">Audiovisuel</p>
-                </a>
-                <ul class="projects-list">
-                  <div class="tree-view"></div>
-                  <li>
-                    <a
-                      href="#"
-                      class="link"
-                      data-type="project"
-                      data-name="webschool"
-                      data-projectID="4"
-                    >
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Editor-video"
-                        ></use>
-                      </svg>
-                      <p class="label">WebSchool</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <!--<li>
-                <a href="#" class="link" data-type="folder" data-name="design" data-state="open">
-                  <svg class="icon">
-                    <use xlink:href="./public/assets/img/Sprite-icons.svg#Folder-open" class="open"></use>
-                    <use xlink:href="./public/assets/img/Sprite-icons.svg#Folder" class="close hidden"></use>
-                  </svg>
-                  <p class="label">Design</p>
-                </a>
-              </li>-->
-            </ul>
-          </nav>
-          <article class="projects-preview">
-            <div class="projects-container">
-              <div class="project" id="allsmoks" data-projectID="1">
-                <h2 class="title">All-smoks</h2>
-                <div class="project-preview-container">
-                  <img
-                    src="./public/assets/img/All-smoks.jpg"
-                    class="preview"
-                    alt="Preview du site web All-smoks"
-                  />
-                </div>
-
-                <p class="description">
-                  All-smoks est un projet de site E-commerce qui a été lancé
-                  avec des amis pour la vente de liquide de cigarette
-                  électronique. Le site n'est actuellement plus disponible est
-                  ligne mais a été entièrement réalisé par mes soins. Du design
-                  jusqu'à l'intégration aidé par un ami.
-                </p>
-              </div>
-              <div class="project" id="bot-discord" data-projectID="2">
-                <h2 class="title">ManagerStonks</h2>
-                <div class="project-preview-container">
-                  <img
-                    src="./public/assets/img/ManagerStonks.jpg"
-                    class="preview"
-                    alt='Preview du site web relatif au bot discord "ManagerStonks"'
-                  />
-                </div>
-
-                <p class="description">
-                  Ce site web est relatif à un projet de bot discord qui a été
-                  réalisé au début de mon apprentissage du développement. Le bot
-                  est le site ont été mis en attente suite à la venue d'autres
-                  projets perfectionnement mon apprentissage. Mais il est tout à
-                  fait envisageable de les reprendre dans le futur.
-                </p>
-              </div>
-              <div class="project" id="login" data-projectID="3">
-                <h2 class="title">Système de compte</h2>
-                <div class="project-preview-container">
-                  <img
-                    src="./public/assets/img/Login-system.jpg"
-                    class="preview"
-                    alt='Preview du formulaire de login du système de compte"'
-                  />
-                </div>
-
-                <p class="description">
-                  Ce petit projet réalisé en php a eu pour but d'apprendre les
-                  notions de bases du langage. Le design n'étant pas le but
-                  principal du projet l'interface utilisateur reste discutable.
-                  Dans ce projet les mots de passes sont hashés afin de garantir
-                  un bon niveau de sécurité.
-                </p>
-              </div>
-              <div class="project" id="webschool" data-projectID="4">
-                <h2 class="title">WebSchool</h2>
-                <div class="project-preview-container">
-                  <video
-                    src="./public/assets/img/Ecole supérieur Webschool.mp4"
-                    class="preview"
-                    name="webschool"
-                    controls
-                    controlsList="nodownload"
-                  ></video>
-                  <a href="#" name="webschool" class="playBtn">
-                    <svg class="icon">
-                      <use
-                        xlink:href="./public/assets/img/Sprite-icons.svg#Play-circle"
-                      ></use>
-                    </svg>
-                  </a>
-                </div>
-
-                <p class="description">
-                  Ce projet d’origine scolaire est un projet né pour un exposé
-                  sur une association fictive. Projet que nous avons accompagné
-                  d’un support vidéo dans le style reportage.
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="knowledges" id="knowledges">
-        <div class="container">
-          <div class="left">
-            <h3 class="title">Mes compétences</h3>
-            <p class="text">
-              Il existe plusieurs technologies et outils que je maîtrise,
-              pouvant ainsi répondre à vos attentes dans les meilleures
-              conditions et avec les outils adéquats.
-            </p>
-            <div class="table">
-              <div class="table-header">
-                <div class="tab" id="technology-btn">
-                  <h5 class="label">Technologies</h5>
-                </div>
-                <div class="tab" id="tools-btn">
-                  <h5 class="label">Outils</h5>
-                </div>
-              </div>
-              <div class="table-body">
-                <div class="table-view" id="technology">
-                  <div class="cell cell-1">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Html-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Html/Css</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">
-                        Frontend • Framework css • Développement
-                      </p>
-                    </div>
-                  </div>
-                  <div class="cell cell-2">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Js-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Javascript</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Frontend • Language • Développement</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-3">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Sass-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Sass</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">
-                        Frontend • préprocesseur css • Développement
-                      </p>
-                    </div>
-                  </div>
-                  <div class="cell cell-4">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Bootstrap-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Bootstrap</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">
-                        Frontend • Framework css • Développement
-                      </p>
-                    </div>
-                  </div>
-                  <div class="cell cell-5">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Tailwind-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Tailwind</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">
-                        Frontend • Framework css • Développement
-                      </p>
-                    </div>
-                  </div>
-                  <div class="cell cell-6">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#React-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">React</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">
-                        Frontend • Framework js • Développement
-                      </p>
-                    </div>
-                  </div>
-                  <div class="cell cell-7">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Node-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">NodeJS</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Backend • Développement</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-8">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Sqlite-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Sql/Sqlite</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Base de données • Développement</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-9">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Php-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Php</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Backend • Language • Développement</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="table-view hidden" id="tools">
-                  <div class="cell cell-1">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Video2"
-                        ></use>
-                      </svg>
-                      <p class="label">Sony Vegas</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Logiciel • Montage • Audiovisuel</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-2">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Photoshop-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Photoshop</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Logiciel • Illustration • Design</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-3">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Figma-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Figma</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">
-                        Logiciel • Maquette • Prototype • Design
-                      </p>
-                    </div>
-                  </div>
-                  <div class="cell cell-4">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Vscode-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Visual Studio code</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Logiciel • Développement</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-5">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Phpmyadmin-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">PhpMyAdmin</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Base de données • Développement</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-6">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Terminal"
-                        ></use>
-                      </svg>
-                      <p class="label">Terminal windows</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Terminal • Développement</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-7">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Windows-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Windows</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Système d'exploitation</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-8">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#DBeaver-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">DBeaver</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Base de données • Développement</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-9">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Git-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Git</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">
-                        Gestion de version • Outil • Développement
-                      </p>
-                    </div>
-                  </div>
-                  <div class="cell cell-9">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Plesk-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Plesk</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Panel hébergement • Développement</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-9">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Filezilla-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Filezilla</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">
-                        Transfert de fichier • Logiciel • Développement
-                      </p>
-                    </div>
-                  </div>
-                  <div class="cell cell-9">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Notion-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Notion</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Gestion • Logiciel • Organisation</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-9">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Github-fill"
-                        ></use>
-                      </svg>
-                      <p class="label">Github</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">
-                        Gestion de version • Outil • Développement
-                      </p>
-                    </div>
-                  </div>
-                  <div class="cell cell-9">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Xampp"
-                        ></use>
-                      </svg>
-                      <p class="label">Xampp</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Serveur local • Développement</p>
-                    </div>
-                  </div>
-                  <div class="cell cell-9">
-                    <div class="cell-header">
-                      <svg class="icon">
-                        <use
-                          xlink:href="./public/assets/img/Sprite-icons.svg#Insomnia-brand"
-                        ></use>
-                      </svg>
-                      <p class="label">Insomnia</p>
-                    </div>
-                    <div class="cell-body">
-                      <p class="tags">Requête • Backend• Logiciel</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="right">
-            <img
-              src="./public/assets/img/knowledge.svg"
-              alt="Image d'une pile de livre avec un personnage qui y monte"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
       <div class="container">
-        <p class="copyright">© 2022 Développé et designé avec 🖤 par Skycel</p>
-        <ul class="links">
-          <li>
-            <a href="#" class="link">
+        <div class="logo">
+          <img src="./public/assets/img/Skycel.png" alt="Logo skycel" class="logo-img">
+          <h3 class="logo-text">
+            <span>S</span>kycel<span>.</span>
+          </h3>
+        </div>
+        <ul class="links" id="nav-links">
+          <li class="item">
+            <a href="#">
               <svg class="icon">
-                <use
-                  xlink:href="./public/assets/img/Sprite-icons.svg#Discord-brand"
-                ></use>
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Home"></use>
               </svg>
+              <p>Home</p>
             </a>
           </li>
-          <li>
-            <a href="#" class="link">
+          <li class="item">
+            <a href="#">
               <svg class="icon">
-                <use
-                  xlink:href="./public/assets/img/Sprite-icons.svg#Github-fill"
-                ></use>
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Work"></use>
               </svg>
+              <p>Projets</p>
             </a>
           </li>
-          <li>
-            <a href="#" class="link">
+          <li class="item">
+            <a href="#">
               <svg class="icon">
-                <use
-                  xlink:href="./public/assets/img/Sprite-icons.svg#Insta-brand"
-                ></use>
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Book"></use>
               </svg>
+              <p>Compétences</p>
             </a>
           </li>
-          <li>
-            <a href="#" class="link">
+          <li class="item">
+            <a href="#">
               <svg class="icon">
-                <use
-                  xlink:href="./public/assets/img/Sprite-icons.svg#Linkedin-brand"
-                ></use>
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Doc-PJ"></use>
               </svg>
+              <p>CV</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Spider-web"></use>
+              </svg>
+              <p>Aranéite</p>
+            </a>
+          </li>
+          <li class="item button">
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Mail"></use>
+              </svg>
+              <p>Contact</p>
             </a>
           </li>
         </ul>
+        <div class="right-container">
+          <a href="#" class="toggle-btn" id="nav-toggle">
+            <div class="bar bar-1"></div>
+            <div class="bar bar-2"></div>
+            <div class="bar bar-3"></div>
+          </a>
+          <a href="#" class="button">
+            <svg class="icon">
+              <use xlink:href="./public/assets/img/Sprite-icons.svg#Mail"></use>
+            </svg>
+            <p>Contact</p>
+          </a>
+        </div>
       </div>
-    </footer>
+    </nav>
+  </header>
+  <main>
+    <header class="banner">
+      <div class="left">
+        <h2 class="title"><span>>_</span> Hello <span class="nobr">world!<span class="cursor"></span></span></h2>
+        <h1 class="title">Je suis Célian BURST,
+          <br>Développeur web <span class="nobr">fullstack
+            <sup id="fullstack">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Info"></use>
+              </svg>
+            </sup></span>
+        </h1>
+        <div class="def-modal" id="fullstack-modal">
+          <h4 class="title">Fullstack</h4>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tate totam sint fugit est officia hic excepturi dolor explicabo maiores, blanditiis amet, debitis earum itaque, ipsum suscipit illum alias saepe?</p>
+        </div>
+        <div class="cta-container">
+          <a href="#" class="button primary">
+            <svg class="icon">
+              <use xlink:href="./public/assets/img/sprite-icons.svg#Mail"></use>
+            </svg>
+            <p>Contact</p>
+          </a>
+          <a href="#" class="button secondary">
+            <p>Voir mes projets</p>
+          </a>
+        </div>
+        <p class="text">En avant pour la visite ! <span>&rarr;</span></p>
+      </div>
+      <div class="right">
+        <img src="public/assets/img/Character.svg"
+             alt="Illustration d'un personnage assis à un bureau utilisant un ordinateur">
+      </div>
+    </header>
+    <section class="about">
+      <div class="left">
+        <img src="./public/assets/img/Building-website.svg" alt="Illustartion de personnages créant un site web">
+      </div>
+      <div class="right">
+        <div class="container">
+          <h3 class="title">À propos de moi</h3>
+          <p class="text">
+            Lycéen en classe de terminale, passionné d’informatique je suis à même de construire en maintenir un projet web. Le
+            développement n’étant cependant qu’un des nombreux domaines aux quels je porte une attention particulière...
+          </p>
+        </div>
+        <div class="container">
+          <h3 class="title">Mes centres d'intérêts</h3>
+          <div id="carousel1">
+            <div class="item main">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Laptop"></use>
+              </svg>
+              <p class="label">Frontend</p>
+            </div>
+            <div class="item second">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Server"></use>
+              </svg>
+              <p class="label">Backend</p>
+            </div>
+            <div class="item third">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Database"></use>
+              </svg>
+              <p class="label">Base de données</p>
+            </div>
+            <div class="item main">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#World-meridians"></use>
+              </svg>
+              <p class="label">HTTP</p>
+            </div>
+            <div class="item second">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Paint-brush"></use>
+              </svg>
+              <p class="label">UX/UI Design</p>
+            </div>
+            <div class="item third">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Video"></use>
+              </svg>
+              <p class="label">Audiovisuel</p>
+            </div>
+            <div class="item main">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Fire"></use>
+              </svg>
+              <p class="label">Sapeur-pompier</p>
+            </div>
+            <div class="item second">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Basket-sport"></use>
+              </svg>
+              <p class="label">Sport</p>
+            </div>
+            <div class="item third">
+              <svg class="icon">
+                <use xlink:href="./public/assets/img/Sprite-icons.svg#Communication-bubble"></use>
+              </svg>
+              <p class="label">Communication</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="./public/assets/js/Nav.js" defer></script>
-    <script src="./public/assets/js/Carousel.js" defer></script>
-    <script src="./public/assets/js/Knowledges.js" defer></script>
-    <script src="./public/assets/js/Project-nav.js" defer></script>
-    <script src="./public/assets/js/Video.js" defer></script>
-  </body>
+  <script src="./public/assets/js/Nav.js" defer></script>
+  <script src="./public/assets/js/Banner.js" defer></script>
+  <script src="./public/assets/js/Carousel.js" defer></script>
+
+</body>
+
 </html>
