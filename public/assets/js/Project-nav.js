@@ -7,14 +7,16 @@ const projectsContainer = document.querySelector(".projects-container");
 folders.forEach((folder) => {
   folder.addEventListener("click", (e) => {
     e.preventDefault();
-    const targetFolder = e.path.filter((el) => el.tagName === "A")[0];
+    let targetFolder;
+    if (e.target.tagName === "A") targetFolder = e.target;
+    else targetFolder = e.target.parentNode;
     if (targetFolder.getAttribute("data-access") === "deny") return;
     targetFolder.classList.toggle("toggle");
 
     const icons = Array.from(
-      Array.from(targetFolder.childNodes).filter(
-        (el) => el.tagName === "svg"
-      )[0].childNodes
+        Array.from(targetFolder.childNodes).filter(
+            (el) => el.tagName === "svg"
+        )[0].childNodes
     ).filter((el) => el.tagName === "use");
 
     icons.forEach((icon) => {
@@ -27,11 +29,14 @@ folders.forEach((folder) => {
 projects.forEach((project) => {
   project.addEventListener("click", (e) => {
     e.preventDefault();
-    const targetProject = e.path.filter((el) => el.tagName === "A")[0];
+    console.log(e.target.tagName);
+    let targetProject;
+    if (e.target.tagName === "A") targetProject = e.target;
+    else targetProject = e.target.parentElement;
     const targetProjectID = targetProject.getAttribute("data-projectID");
 
     const projectsLink = document.querySelectorAll(
-      '.link[data-type="project"]'
+        '.link[data-type="project"]'
     );
     projectsLink.forEach((link) => link.classList.remove("active"));
 
