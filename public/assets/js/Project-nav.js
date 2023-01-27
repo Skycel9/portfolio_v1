@@ -7,7 +7,9 @@ const projectsContainer = document.querySelector(".projects-container");
 folders.forEach((folder) => {
   folder.addEventListener("click", (e) => {
     e.preventDefault();
-    const targetFolder = e.path.filter((el) => el.tagName === "A")[0];
+    let targetFolder;
+    if (e.target.tagName === "A") targetFolder = e.target;
+    else targetFolder = e.target.parentNode;
     if (targetFolder.getAttribute("data-access") === "deny") return;
     targetFolder.classList.toggle("toggle");
 
@@ -27,7 +29,10 @@ folders.forEach((folder) => {
 projects.forEach((project) => {
   project.addEventListener("click", (e) => {
     e.preventDefault();
-    const targetProject = e.path.filter((el) => el.tagName === "A")[0];
+    console.log(e.target.tagName);
+    let targetProject;
+    if (e.target.tagName === "A") targetProject = e.target;
+    else targetProject = e.target.parentElement;
     const targetProjectID = targetProject.getAttribute("data-projectID");
 
     const projectsLink = document.querySelectorAll(
